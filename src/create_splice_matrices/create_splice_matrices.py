@@ -137,7 +137,7 @@ ENTRY_T = {'caseID': '',
            'bioinfo_summary': '',
            'literature_summary': ''}
 
-genome = twobitreader.TwoBitFile('/home/sayantan/Desktop/SpliceAI/create_splice_matrices/hg19.2bit')
+genome = twobitreader.TwoBitFile('/home/sayantan/Desktop/VCF_creation/hg19.2bit')
 
 
 def get_genomic_position(genomicHGVS):
@@ -172,12 +172,18 @@ def create_gene_strand_map(genes_file):
         gene_strand_map[gene['Symbol']] = gene['Strand']
 
 
-def create_mes_ranges(position):
+def create_mes_ranges(position, strand):
     # Max Ent Scan
     # Donor splice  site = -5 to +3
     # Acceptor splice site = -19 to +3
-    donor_splice = {'start': (position - 3), 'end': (position + 5)}
-    acceptor_splice = {'start': (position - 3), 'end': (position + 19)}
+    # Build handling for negative strand?????
+    if strand == '+':
+    	donor_splice = {'start': (position - 3), 'end': (position + 5)}
+    	acceptor_splice = {'start': (position - 19), 'end': (position + 3)}
+    else:
+    	donor_splice = {'start': (position - 5), 'end': (position + 3)}
+    	acceptor_splice = {'start': (position - 3), 'end': (position + 19)}
+
     return donor_splice, acceptor_splice
 
 
@@ -194,6 +200,7 @@ def create_nnsplice_ranges(position):
     # NN Splice
     # Donor splice  site = -7 to +8
     # Acceptor splice site = -20 to +20
+    # Build handling for negative strand?????
     donor_splice = {'start': (position - 7), 'end': (position + 8)}
     acceptor_splice = {'start': (position - 20), 'end': (position + 20)}
     return donor_splice, acceptor_splice
@@ -273,7 +280,7 @@ def create_splice_matrix(inputfile, outfile):
         except:
             pass
 
-        (mes_donor, mes_acceptor) = create_mes_ranges(position)
+        (mes_donor, mes_acceptor) = create_mes_ranges(position, strand)
         (nnsplice_donor, nnsplice_acceptor) = create_nnsplice_ranges(position)
         (spliceport_donor, spliceport_acceptor) = create_spliceport_ranges(position)
         (hsf_donor, hsf_acceptor) = create_hsf_ranges(position)
