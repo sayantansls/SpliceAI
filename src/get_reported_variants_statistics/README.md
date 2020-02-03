@@ -19,7 +19,7 @@
 	 Gender Stats: {'Male': 74, 'Female': 51}
 	 Age Stats: {'below 10 years': 72, 'above 20 years': 18, 'between 10 to 20 years': 35}
 
-### The script "get_reported_variants_statistics.py" gives us the reported variants statitics:
+### The script "get_reported_variants_statistics.py" gives us the reported variants statistics:
 	DATA=../../data
 	PYTHONPATH=../common python get_reported_variants_statistics.py \
 	$DATA/variants_input_data/positive.tsv \
