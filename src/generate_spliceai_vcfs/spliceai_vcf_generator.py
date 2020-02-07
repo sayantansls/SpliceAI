@@ -138,7 +138,6 @@ def create_non_substitution_entries(output):
 		ENTRY['ALT'] = alt
 
 		field_values = [str(ENTRY[i]) for i in headers]
-		print(field_values)
 		output.write(sep.join(field_values))
 		output.write('\n')
 
