@@ -20,12 +20,12 @@ headers = ['#CHROM',
 
 ENTRY_T = {'#CHROM': '',
            'POS': '',
-           'ID': '',
+           'ID': '.',
            'REF': '',
            'ALT': '',
-           'QUAL': '',
-           'FILTER': '',
-           'INFO': ''}
+           'QUAL': '.',
+           'FILTER': '.',
+           'INFO': '.'}
 
 sep = '\t'
 
@@ -33,9 +33,9 @@ def load_human_genome_sequence(genome_file):
 	global genome
 	genome = twobitreader.TwoBitFile(genome_file)
 
-metadata = list()
-
 def load_metadata(input_template):
+	global metadata
+	metadata = list()
 	f = open(input_template, 'r')
 	for line in f.readlines():
 		if line.startswith('##'):
@@ -50,9 +50,9 @@ def load_metadata(input_template):
 #5 -- Symbol
 #6 -- Entrez_id
 
-gene_chrom_dict = dict()
-
 def create_gene_chromosome_map(genesfile):
+	global gene_chrom_dict
+	gene_chrom_dict = dict()
 	for gene in utils.records_iterator(genesfile):
 		if gene['ChrName'] not in gene_chrom_dict:
 			gene_chrom_dict[gene['ChrName']] = list()
@@ -62,16 +62,16 @@ def create_gene_chromosome_map(genesfile):
 #0 -- Gene name
 #1 -- genomicHGVS
 
-variants_list = list()
-
 def process_input_file(input_file):
+	global variants_list 
+	variants_list = list()
 	for entry in utils.records_iterator(input_file):
 		lst = [entry['Gene name'], entry['genomicHGVS']]
 		variants_list.append(lst)
 
-subs, others = [list(), list()]
-
 def segregate_variants():
+	global subs, others
+	subs, others = [list(), list()]
 	for variant in variants_list:
 		if ">" in variant[1]:
 			subs.append(variant)
@@ -104,8 +104,6 @@ def other_handling(genomicHGVS, chrom):
 	alt = ref + ins_bases
 	return pos, ref, alt
 
-all_sub_variants = str()
-
 def create_substitution_entries(output):
 	for variant in subs:
 		ENTRY = copy.deepcopy(ENTRY_T)
@@ -116,12 +114,8 @@ def create_substitution_entries(output):
 
 		ENTRY['#CHROM'] = get_chromosome(gene).replace('chr','')
 		ENTRY['POS'] = position
-		ENTRY['ID'] = '.'
 		ENTRY['REF'] = ref
 		ENTRY['ALT'] = alt
-		ENTRY['QUAL'] = '.'
-		ENTRY['FILTER'] = '.'
-		ENTRY['INFO'] = '.'
 
 		field_values = [ENTRY[i] for i in headers]
 		output.write(sep.join(field_values))
@@ -140,12 +134,8 @@ def create_non_substitution_entries(output):
 
 		ENTRY['#CHROM'] = get_chromosome(gene).replace('chr','')
 		ENTRY['POS'] = pos
-		ENTRY['ID'] = '.'
 		ENTRY['REF'] = ref
 		ENTRY['ALT'] = alt
-		ENTRY['QUAL'] = '.'
-		ENTRY['FILTER'] = '.'
-		ENTRY['INFO'] = '.'
 
 		field_values = [str(ENTRY[i]) for i in headers]
 		print(field_values)
