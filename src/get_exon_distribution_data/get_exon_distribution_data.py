@@ -88,6 +88,7 @@ def main(splice_variants_file, transcripts_file):
 
 	create_splice_variants_genes_set(splice_variants_file)
 	get_strong_exons(transcripts_file)
+	print(gene_exons)
 	print("End of code:", tm.ctime(tm.time()))
 
 if __name__ == '__main__':
