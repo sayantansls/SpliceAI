@@ -10,7 +10,7 @@ import os
 
 def multiseq_processing(inputfile, ref_output, var_output):
 	for variant in utils.records_iterator(inputfile):
-		fasta_line = "> " + variant['gene'] + variant['genomicHGVS']
+		fasta_line = "> " + variant['gene'] + " " + variant['genomicHGVS']
 		
 		ref_output.write(fasta_line)
 		ref_output.write('\n')

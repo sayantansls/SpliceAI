@@ -1,0 +1,326 @@
+Splice site predictions for 46 sequences with donor score cutoff 0.40, acceptor score cutoff 0.40 (exon/intron boundary shown in larger font):
+Donor site predictions for PLP1 :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for PLP1 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for MFSD8 :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for MFSD8 :
+Start   End    Score     Intron               Exon
+    1    41     0.96     atttgtgtttttctttttaagagaacatcgtgtggatgact
+
+Donor site predictions for CEP290 :
+Start   End    Score     Exon   Intron
+    1    15     0.72     acttcaggtatactc
+
+Acceptor site predictions for CEP290 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for PNKP :
+Start   End    Score     Exon   Intron
+    1    15     0.97     tcgcctggtgaggcc
+
+Acceptor site predictions for PNKP :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for ALDH7A1 :
+Start   End    Score     Exon   Intron
+    1    15     0.94     gcctttggtacgtag
+
+Acceptor site predictions for ALDH7A1 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for ALDH7A1 :
+Start   End    Score     Exon   Intron
+    1    15     0.94     gcctttggtacgtag
+
+Acceptor site predictions for ALDH7A1 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for D2HGDH :
+Start   End    Score     Exon   Intron
+    1    15     0.71     gtgcaaggtactgac
+
+Acceptor site predictions for D2HGDH :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for NIPBL :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for NIPBL :
+Start   End    Score     Intron               Exon
+    1    41     0.92     aattttttttcttcattaaaggttaaacagtagtgatatgg
+
+Donor site predictions for SCN1A :
+Start   End    Score     Exon   Intron
+   11    25     0.46     ccctttggtaggtgg
+
+Acceptor site predictions for SCN1A :
+Start   End    Score     Intron               Exon
+    1    41     0.98     caaaatattcccctttggtaggtggaactccagcctaagta
+
+Donor site predictions for SCN1A :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for SCN1A :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for PLA2G6 :
+Start   End    Score     Exon   Intron
+    1    15     0.88     catgtcggtgagccc
+
+Acceptor site predictions for PLA2G6 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for DYSF :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for DYSF :
+Start   End    Score     Intron               Exon
+    1    41     0.94     aagtgctctctgtcccctcagggcaagctggaaatgacctt
+
+Donor site predictions for SIGMAR1 :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for SIGMAR1 :
+Start   End    Score     Intron               Exon
+    1    41     0.87     tgggtgctccctgtcccccaggggagacggtagtacacggg
+
+Donor site predictions for ALS2 :
+Start   End    Score     Exon   Intron
+    1    15     0.92     tctacaggtaacatt
+
+Acceptor site predictions for ALS2 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for SGCG :
+Start   End    Score     Exon   Intron
+    1    15     0.99     cagagtggtaagaaa
+
+Acceptor site predictions for SGCG :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for CAPN3 :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for CAPN3 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for FKTN :
+Start   End    Score     Exon   Intron
+    1    15     0.96     acagtgggtatgtag
+
+Acceptor site predictions for FKTN :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for CHRNE :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for CHRNE :
+Start   End    Score     Intron               Exon
+    1    41     0.63     actgtgccgacccttccccaggaagtgtccgactgggtgcg
+
+Donor site predictions for SIGMAR1 :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for SIGMAR1 :
+Start   End    Score     Intron               Exon
+    1    41     0.87     tgggtgctccctgtcccccaggggagacggtagtacacggg
+
+Donor site predictions for LAMA2 :
+Start   End    Score     Exon   Intron
+    1    15     0.41     tggtccagtaaatat
+
+Acceptor site predictions for LAMA2 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for WFS1 :
+Start   End    Score     Exon   Intron
+    1    15     0.82     agcgagtgtgagtgc
+
+Acceptor site predictions for WFS1 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for TPP1 :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for TPP1 :
+Start   End    Score     Intron               Exon
+    1    41     0.94     ccctgacccctgaccctacaggctgcccccaggctgggtgt
+
+Donor site predictions for LAMA2 :
+Start   End    Score     Exon   Intron
+   25    39     0.86     tctcgctgtgagtgt
+
+Acceptor site predictions for LAMA2 :
+Start   End    Score     Intron               Exon
+    1    41     0.95     ttcctccctctttttgactagaaatctcgctgtgagtgtga
+
+Donor site predictions for LAMA2 :
+Start   End    Score     Exon   Intron
+    1    15     0.99     ttgtaaggtgagtga
+
+Acceptor site predictions for LAMA2 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for APTX :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for APTX :
+Start   End    Score     Intron               Exon
+    1    41     0.94     acttttcttccttgcctgcagctgtgatcgagatggtacaa
+
+Donor site predictions for ATM :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for ATM :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for CYP27A1 :
+Start   End    Score     Exon   Intron
+    1    15     0.59     ttggaaggtaccctt
+
+Acceptor site predictions for CYP27A1 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for DYSF :
+Start   End    Score     Exon   Intron
+    1    15     0.98     tagactggtgagttc
+
+Acceptor site predictions for DYSF :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for SGCE :
+Start   End    Score     Exon   Intron
+    1    15     0.99     gcagaaggtaggtat
+
+Acceptor site predictions for SGCE :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for PAH :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for PAH :
+Start   End    Score     Intron               Exon
+    1    41     0.94     cctccccattctctcttctaggagaatgatgtaaacctgac
+
+Donor site predictions for RYR1 :
+Start   End    Score     Exon   Intron
+    1    15     0.51     agaaccggtcagggc
+
+Acceptor site predictions for RYR1 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for RYR1 :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for RYR1 :
+Start   End    Score     Intron               Exon
+    1    41     0.69     caacactgcttcccccaccagaacttcaagcgcgaggagca
+
+Donor site predictions for ERCC8 :
+Start   End    Score     Exon   Intron
+    1    15     0.93     ggagatagtaagttt
+
+Acceptor site predictions for ERCC8 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for PEX1 :
+Start   End    Score     Exon   Intron
+    1    15     0.95     agtctgggttagtat
+
+Acceptor site predictions for PEX1 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for BRCA1 :
+Start   End    Score     Exon   Intron
+    1    15     0.44     gatctaggtaatatt
+
+Acceptor site predictions for BRCA1 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for PDHA1 :
+Start   End    Score     Exon   Intron
+Predictions for the reverse strand:
+Start   End    Score     Exon   Intron
+   17     3     0.81     AAATTAGGTAACAGT
+
+Acceptor site predictions for PDHA1 :
+Start   End    Score     Intron               Exon
+    1    41     0.60     acactgttacctaatttttaggaaattgatgtggaagtgag
+
+Donor site predictions for AIRE :
+Start   End    Score     Exon   Intron
+    1    15     0.98     ccaccaggtaatgcc
+
+Acceptor site predictions for AIRE :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for ATP7B :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for ATP7B :
+Start   End    Score     Intron               Exon
+    1    41     0.78     tcttgccatcctgtgttgcagatcacagggatgacctgcgc
+
+Donor site predictions for ATP8A2 :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for ATP8A2 :
+Start   End    Score     Intron               Exon
+    1    41     0.83     aactgtcttttattttcacagtatgttgttgttactgtttg
+
+Donor site predictions for RYR1 :
+Start   End    Score     Exon   Intron
+    1    15     0.51     agaaccggtcagggc
+
+Acceptor site predictions for RYR1 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for RYR1 :
+Start   End    Score     Exon   Intron
+
+Acceptor site predictions for RYR1 :
+Start   End    Score     Intron               Exon
+    1    41     0.69     caacactgcttcccccaccagaacttcaagcgcgaggagca
+
+Donor site predictions for SLC25A22 :
+Start   End    Score     Exon   Intron
+    1    15     0.59     gtgccaggtggggag
+
+Acceptor site predictions for SLC25A22 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for BRCA1 :
+Start   End    Score     Exon   Intron
+    1    15     0.44     gatctaggtaatatt
+
+Acceptor site predictions for BRCA1 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for PDHA1 :
+Start   End    Score     Exon   Intron
+Predictions for the reverse strand:
+Start   End    Score     Exon   Intron
+   17     3     0.81     AAATTAGGTAACAGT
+
+Acceptor site predictions for PDHA1 :
+Start   End    Score     Intron               Exon
+    1    41     0.60     acactgttacctaatttttaggaaattgatgtggaagtgag
+
+Donor site predictions for COL6A1 :
+Start   End    Score     Exon   Intron
+    1    15     0.90     gggacaggtaggagg
+
+Acceptor site predictions for COL6A1 :
+Start   End    Score     Intron               Exon
+
+Donor site predictions for TNNT1 :
+Start   End    Score     Exon   Intron
+    1    15     0.99     atatgaggtgagacc
+
+Acceptor site predictions for TNNT1 :
+Start   End    Score     Intron               Exon

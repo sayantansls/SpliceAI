@@ -14,12 +14,12 @@
 	DATA=../../data
 	python multiseq_processing.py \
 	$DATA/processed_files/splice_predictor_raw_data/Splice_Variants_Matrix\ -\ NNSplice\ Raw\ Data.tsv \
-	$DATA/processed_files/fasta_upload_files/maxentscan_ref.fasta \
-	$DATA/processed_files/fasta_upload_files/maxentscan_var.fasta
+	$DATA/processed_files/fasta_upload_files/nnsplice_ref.fasta \
+	$DATA/processed_files/fasta_upload_files/nnsplice_var.fasta
 
 	DATA=../../data
 	python multiseq_processing.py \
 	$DATA/processed_files/splice_predictor_raw_data/Splice_Variants_Matrix\ -\ ASSP\ Raw\ Data.tsv \
-	$DATA/processed_files/fasta_upload_files/maxentscan_ref.fasta \
-	$DATA/processed_files/fasta_upload_files/maxentscan_var.fasta
+	$DATA/processed_files/fasta_upload_files/assp_ref.fasta \
+	$DATA/processed_files/fasta_upload_files/assp_var.fasta
 
