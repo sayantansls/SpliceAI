@@ -1,0 +1,76 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##fileDate=20191004
+##reference=GRCh37/hg19
+##contig=<ID=1,length=249250621>
+##contig=<ID=2,length=243199373>
+##contig=<ID=3,length=198022430>
+##contig=<ID=4,length=191154276>
+##contig=<ID=5,length=180915260>
+##contig=<ID=6,length=171115067>
+##contig=<ID=7,length=159138663>
+##contig=<ID=8,length=146364022>
+##contig=<ID=9,length=141213431>
+##contig=<ID=10,length=135534747>
+##contig=<ID=11,length=135006516>
+##contig=<ID=12,length=133851895>
+##contig=<ID=13,length=115169878>
+##contig=<ID=14,length=107349540>
+##contig=<ID=15,length=102531392>
+##contig=<ID=16,length=90354753>
+##contig=<ID=17,length=81195210>
+##contig=<ID=18,length=78077248>
+##contig=<ID=19,length=59128983>
+##contig=<ID=20,length=63025520>
+##contig=<ID=21,length=48129895>
+##contig=<ID=22,length=51304566>
+##contig=<ID=X,length=155270560>
+##contig=<ID=Y,length=59373566>
+##INFO=<ID=SpliceAI,Number=.,Type=String,Description="SpliceAIv1.3 variant annotation. These include delta scores (DS) and delta positions (DP) for acceptor gain (AG), acceptor loss (AL), donor gain (DG), and donor loss (DL). Format: ALLELE|SYMBOL|DS_AG|DS_AL|DS_DG|DS_DL|DP_AG|DP_AL|DP_DG|DP_DL">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+X	103041656	.	G	A	.	.	SpliceAI=A|PLP1|0.00|0.00|0.03|0.18|14|-1|-43|-1
+4	128859994	.	C	T	.	.	SpliceAI=T|MFSD8|0.26|0.84|0.00|0.00|-3|-1|-3|-38
+12	88512260	.	C	T	.	.	SpliceAI=T|CEP290|0.00|0.00|0.95|0.27|0|-1|-43|0
+19	50365794	.	C	A	.	.	SpliceAI=A|PNKP|0.00|0.00|0.00|0.96|-32|30|2|1
+2	242689707	.	A	G	.	.	SpliceAI=G|D2HGDH|0.00|0.00|0.10|0.00|-5|-8|-5|2
+5	37010186	.	A	G	.	.	SpliceAI=G|NIPBL|0.92|0.64|0.00|0.00|1|3|1|35
+2	166854685	.	C	A	.	.	SpliceAI=A|SCN1A|0.00|0.04|0.00|0.00|-12|0|33|-37
+2	166895930	.	T	A	.	.	SpliceAI=A|SCN1A|0.00|0.00|0.00|0.95|-49|6|2|3
+22	38528838	.	C	T	.	.	SpliceAI=T|PLA2G6|0.00|0.00|0.65|0.63|0|-1|4|0
+2	71908130	.	G	C	.	.	SpliceAI=C|DYSF|0.64|1.00|0.00|0.00|7|1|37|14
+9	34635855	.	C	T	.	.	SpliceAI=T|SIGMAR1|0.16|0.24|0.00|0.00|-2|0|-23|0
+2	202590081	.	G	A	.	.	SpliceAI=A|ALS2|0.00|0.00|0.01|0.00|19|28|19|-2
+13	23808851	.	G	A	.	.	SpliceAI=A|SGCG|0.00|0.00|0.01|0.84|0|-16|10|0
+15	42682142	.	G	A	.	.	SpliceAI=A|CAPN3|0.99|0.96|0.00|0.00|2|9|45|34
+9	108358943	.	G	A	.	.	SpliceAI=A|FKTN|0.00|0.00|0.39|0.84|-5|-36|-9|-5
+9	34635855	.	C	T	.	.	SpliceAI=T|SIGMAR1|0.16|0.24|0.00|0.00|-2|0|-23|0
+6	129826501	.	G	A	.	.	SpliceAI=A|LAMA2|0.00|0.00|0.62|0.98|5|-42|-50|-1
+11	6640154	.	G	C	.	.	SpliceAI=C|TPP1|0.05|0.50|0.00|0.00|19|-8|-8|-36
+6	129470122	.	A	G	.	.	SpliceAI=G|LAMA2|0.00|0.99|0.00|0.00|17|2|17|11
+6	129622017	.	G	A	.	.	SpliceAI=A|LAMA2|0.00|0.00|0.00|0.20|0|-18|-8|0
+9	32973652	.	T	C	.	.	SpliceAI=C|APTX|0.41|0.98|0.00|0.00|29|-2|-28|-15
+11	108165787	.	G	A	.	.	SpliceAI=A|ATM|0.00|0.00|0.01|0.64|14|-1|8|-1
+2	219677145	.	G	A	.	.	SpliceAI=A|CYP27A1|0.00|0.00|0.52|0.96|-44|0|-44|-1
+7	94252632	.	C	T	.	.	SpliceAI=T|SGCE|0.00|0.00|0.00|0.74|5|7|-36|5
+12	103288698	.	T	C	.	.	SpliceAI=C|PAH|0.04|1.00|0.00|0.00|-37|-2|46|-2
+19	38974156	.	G	A	.	.	SpliceAI=A|RYR1|0.00|0.00|0.16|0.77|-7|0|26|0
+19	39013851	.	C	G	.	.	SpliceAI=G|RYR1|0.00|0.47|0.00|0.00|-41|6|35|15
+7	92146585	.	C	T	.	.	SpliceAI=T|PEX1|0.00|0.00|0.03|0.85|8|30|35|5
+17	41226348	.	C	G	.	.	SpliceAI=G|BRCA1|0.00|0.00|0.68|0.90|-17|11|11|0
+21	45709952	.	G	A	.	.	SpliceAI=A|AIRE|0.00|0.00|0.03|0.75|50|-19|50|-1
+13	52539170	.	C	G	.	.	SpliceAI=G|ATP7B|0.71|0.95|0.00|0.00|-8|-1|48|-1
+13	26434941	.	G	A	.	.	SpliceAI=A|ATP8A2|0.32|0.99|0.00|0.00|29|1|-30|-1
+19	38974156	.	G	A	.	.	SpliceAI=A|RYR1|0.00|0.00|0.16|0.77|-7|0|26|0
+19	39013851	.	C	G	.	.	SpliceAI=G|RYR1|0.00|0.47|0.00|0.00|-41|6|35|15
+11	792141	.	C	G	.	.	SpliceAI=G|SLC25A22|0.00|0.00|0.03|1.00|-39|32|8|1
+17	41226348	.	C	G	.	.	SpliceAI=G|BRCA1|0.00|0.00|0.68|0.90|-17|11|11|0
+21	47402675	.	C	T	.	.	SpliceAI=T|COL6A1|0.00|0.00|0.00|0.00|-40|-23|-42|2
+19	55645433	.	C	T	.	.	SpliceAI=T|TNNT1|0.00|0.00|0.04|0.98|-19|12|8|1
+5	125885616	.	C	CCAAAGGCACCTCCAAAGGAG	.	.	SpliceAI=CCAAAGGCACCTCCAAAGGAG|ALDH7A1|0.00|0.00|0.11|0.98|0|5|0|5
+5	125885616	.	C	CCAAAGGCACCTCCAAAGGAG	.	.	SpliceAI=CCAAAGGCACCTCCAAAGGAG|ALDH7A1|0.00|0.00|0.11|0.98|0|5|0|5
+17	4802185	.	TC	T	.	.	SpliceAI=T|CHRNE|0.44|0.90|0.00|0.00|0|1|0|-13
+4	6293724	.	TGT	T	.	.	SpliceAI=T|WFS1|0.00|0.00|0.94|0.98|41|11|-2|0
+2	71762443	.	T	TT	.	.	SpliceAI=TT|DYSF|0.00|0.81|0.00|0.83|26|-45|-1|-2
+5	60224684	.	AACTT	A	.	.	SpliceAI=A|ERCC8|0.00|0.00|0.01|1.00|-10|13|-10|7
+X	19377575	.	TAAAACCTTTTACACTGTTACCTAA	T	.	.	SpliceAI=T|PDHA1|0.00|0.00|0.00|0.00|-13|48|46|-45
+X	19377575	.	TAAAACCTTTTACACTGTTACCTAA	T	.	.	SpliceAI=T|PDHA1|0.00|0.00|0.00|0.00|-13|48|46|-45
