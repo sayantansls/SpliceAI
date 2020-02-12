@@ -36,6 +36,9 @@ Start   End    Score     Intron               Exon
 
 Acceptor site predictions for ALDH7A1125894932 :
 Start   End    Score     Intron               Exon
+Predictions for the reverse strand:
+Start   End    Score     Intron               Exon
+   41     1     0.10     CTGAGGTCTGCATCTTCAAAGGCTTAGGAAAGCACAAACAC
 
 Acceptor site predictions for ALDH7A1125896775 :
 Start   End    Score     Intron               Exon
@@ -177,7 +180,6 @@ Start   End    Score     Intron               Exon
 
 Acceptor site predictions for PLA2G638519102 :
 Start   End    Score     Intron               Exon
-    1    41     0.41     ggccctggccattctgcacagtgagggcggcccctggggat
 
 Acceptor site predictions for PLA2G638516766 :
 Start   End    Score     Intron               Exon
@@ -325,6 +327,7 @@ Start   End    Score     Intron               Exon
 
 Acceptor site predictions for APTX32989757 :
 Start   End    Score     Intron               Exon
+    1    41     0.14     cttttgttttgtcccttagagtgatgatgcgggtgtgctgg
 
 Acceptor site predictions for APTX32985969 :
 Start   End    Score     Intron               Exon
@@ -447,6 +450,7 @@ Start   End    Score     Intron               Exon
 
 Acceptor site predictions for BRCA141222945 :
 Start   End    Score     Intron               Exon
+    1    41     0.54     cttctcccattcctttcagagggaaccccttacctggaatc
 
 Acceptor site predictions for BRCA141219625 :
 Start   End    Score     Intron               Exon
@@ -530,6 +534,9 @@ Start   End    Score     Intron               Exon
 
 Acceptor site predictions for SLC25A22794776 :
 Start   End    Score     Intron               Exon
+Predictions for the reverse strand:
+Start   End    Score     Intron               Exon
+   41     1     0.02     ATTGATGAGCTTGGCTGGCAGGCTGTGTGGACAGGGGTGTC
 
 Acceptor site predictions for SLC25A22794458 :
 Start   End    Score     Intron               Exon
@@ -557,6 +564,7 @@ Start   End    Score     Intron               Exon
 
 Acceptor site predictions for TNNT155658049 :
 Start   End    Score     Intron               Exon
+    1    41     0.02     tctgtgcccccatctccagaggaggctgcggaggaggagga
 
 Acceptor site predictions for TNNT155656912 :
 Start   End    Score     Intron               Exon

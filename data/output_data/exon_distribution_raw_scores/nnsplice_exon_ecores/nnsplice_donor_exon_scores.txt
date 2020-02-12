@@ -351,6 +351,7 @@ Start   End    Score     Exon   Intron
 
 Donor site predictions for SGCE94230169 :
 Start   End    Score     Exon   Intron
+    1    15     0.02     ggaaggcgtgtgagt
 
 Donor site predictions for SGCE94228275 :
 Start   End    Score     Exon   Intron
@@ -576,4 +577,3 @@ Start   End    Score     Exon   Intron
 
 Donor site predictions for TNNT155644328 :
 Start   End    Score     Exon   Intron
-
