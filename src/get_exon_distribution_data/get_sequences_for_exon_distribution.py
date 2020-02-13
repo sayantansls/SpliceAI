@@ -49,7 +49,7 @@ def process_input_file(input_file, output):
 	for gene in utils.records_iterator(input_file):
 		ENTRY = copy.deepcopy(ENTRY_T)
 
-		ENTRY['Gene'] = ''.join(gene['Gene'].split('-')[:-2])
+		ENTRY['Gene'] = gene['Gene']
 		chrom = gene['Chromosome']
 		ENTRY['Chromosome'] = chrom
 		strand = gene['Strand']
@@ -58,12 +58,21 @@ def process_input_file(input_file, output):
 		exon_start, exon_end = [int(gene['Exon Start']), int(gene['Exon End'])]
 		ENTRY['Exon_start'], ENTRY['Exon_end'] = [exon_start, exon_end] 
 		
-		mes_donor = create_splice_matrices.create_mes_donor_range(exon_end, strand)
-		mes_acceptor = create_splice_matrices.create_mes_acceptor_range(exon_start, strand)
-		nnplice_donor = create_splice_matrices.create_nnsplice_donor_range(exon_end)
-		nnsplice_acceptor = create_splice_matrices.create_nnsplice_acceptor_range(exon_start)
-		assp_hsf_donor = create_splice_matrices.create_assp_hsf_range(exon_end)
-		assp_hsf_acceptor = create_splice_matrices.create_assp_hsf_range(exon_start)
+		if strand == '+':
+			mes_donor = create_splice_matrices.create_mes_donor_range(exon_end, strand)
+			mes_acceptor = create_splice_matrices.create_mes_acceptor_range(exon_start, strand)
+			nnplice_donor = create_splice_matrices.create_nnsplice_donor_range(exon_end)
+			nnsplice_acceptor = create_splice_matrices.create_nnsplice_acceptor_range(exon_start)
+			assp_hsf_donor = create_splice_matrices.create_assp_hsf_range(exon_end)
+			assp_hsf_acceptor = create_splice_matrices.create_assp_hsf_range(exon_start)
+		else:
+			mes_donor = create_splice_matrices.create_mes_donor_range(exon_start, strand)
+			mes_acceptor = create_splice_matrices.create_mes_acceptor_range(exon_end, strand)
+			nnplice_donor = create_splice_matrices.create_nnsplice_donor_range(exon_start)
+			nnsplice_acceptor = create_splice_matrices.create_nnsplice_acceptor_range(exon_end)
+			assp_hsf_donor = create_splice_matrices.create_assp_hsf_range(exon_start)
+			assp_hsf_acceptor = create_splice_matrices.create_assp_hsf_range(exon_end)
+
 
 		mes_donor_seq = create_splice_matrices.get_original_sequence(mes_donor, chrom)
 		mes_acceptor_seq = create_splice_matrices.get_original_sequence(mes_acceptor, chrom)
@@ -89,6 +98,7 @@ def process_input_file(input_file, output):
 			ENTRY['ASSP/HSF_acceptor_seq'] = create_splice_matrices.create_reverse_complementary_sequence(assp_hsf_acceptor_seq)
 
 		field_values = [str(ENTRY[i]) for i in HEADERS]
+		print(field_values)
 		output.write(sep.join(field_values))
 		output.write('\n')
 
