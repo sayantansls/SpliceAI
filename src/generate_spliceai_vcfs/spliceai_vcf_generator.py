@@ -8,6 +8,7 @@ import re
 import copy
 import sys
 import utils
+import vcf_generator_ver2
 
 headers = ['#CHROM',
 		   'POS',
@@ -29,81 +30,6 @@ ENTRY_T = {'#CHROM': '',
 
 sep = '\t'
 
-def load_human_genome_sequence(genome_file):
-	global genome
-	genome = twobitreader.TwoBitFile(genome_file)
-
-def load_metadata(input_template):
-	global metadata
-	metadata = list()
-	f = open(input_template, 'r')
-	for line in f.readlines():
-		if line.startswith('##'):
-			metadata.append(line)
-
-#The headers in the genes.tsv file are as follows:
-#0 -- Strand_gene_id
-#1 -- ChrName
-#2 -- Strand
-#3 -- Gene_start
-#4 -- Gene_end
-#5 -- Symbol
-#6 -- Entrez_id
-
-def create_gene_chromosome_map(genesfile):
-	global gene_chrom_dict
-	gene_chrom_dict = dict()
-	for gene in utils.records_iterator(genesfile):
-		if gene['ChrName'] not in gene_chrom_dict:
-			gene_chrom_dict[gene['ChrName']] = list()
-		gene_chrom_dict[gene['ChrName']].append(gene['Symbol'])
-
-#The headers in the input file are as follows:
-#0 -- Gene name
-#1 -- genomicHGVS
-
-def process_input_file(input_file):
-	global variants_list 
-	variants_list = list()
-	for entry in utils.records_iterator(input_file):
-		lst = [entry['Gene name'], entry['genomicHGVS']]
-		variants_list.append(lst)
-
-def segregate_variants():
-	global subs, others
-	subs, others = [list(), list()]
-	for variant in variants_list:
-		if ">" in variant[1]:
-			subs.append(variant)
-		else:
-			others.append(variant)
-
-def get_chromosome(gene):
-	for k,v in gene_chrom_dict.items():
-		if gene in v:
-			return k
-
-def del_handling(genomicHGVS, chrom):
-	positions = re.findall(r'[0-9]+', genomicHGVS)
-	if len(positions) == 1:
-		pos = int(positions[0]) - 1
-		ref = genome[chrom][pos-1:int(positions[0])].upper()
-		alt = genome[chrom][pos-1].upper()
-	else:
-		start, end = [positions[0], positions[1]]
-		pos = int(start) -1 
-		ref = genome[chrom][pos-1:int(end)].upper()
-		alt = genome[chrom][pos-1].upper()
-	return pos, ref, alt
-
-def other_handling(genomicHGVS, chrom):
-	positions = re.findall(r'[0-9]+', genomicHGVS)
-	ins_bases = ''.join(re.findall(r'[A-Z]+', genomicHGVS))
-	pos = positions[0]
-	ref = genome[chrom][int(pos)-1].upper()
-	alt = ref + ins_bases
-	return pos, ref, alt
-
 def create_substitution_entries(output):
 	for variant in subs:
 		ENTRY = copy.deepcopy(ENTRY_T)
@@ -112,7 +38,7 @@ def create_substitution_entries(output):
 		position = ''.join(re.findall(r'[0-9]+', gHGVS))
 		ref, alt = [ref_alt[0], ref_alt[1]]
 
-		ENTRY['#CHROM'] = get_chromosome(gene).replace('chr','')
+		ENTRY['#CHROM'] = vcf_generator_ver2.get_chromosome(gene).replace('chr','')
 		ENTRY['POS'] = position
 		ENTRY['REF'] = ref
 		ENTRY['ALT'] = alt
@@ -128,11 +54,11 @@ def create_non_substitution_entries(output):
 		chrom = get_chromosome(gene)
 
 		if "del" in gHGVS:
-			(pos, ref, alt) = del_handling(gHGVS, chrom)
+			(pos, ref, alt) = vcf_generator_ver2.del_handling(gHGVS, chrom)
 		else:
-			(pos, ref, alt) = other_handling(gHGVS, chrom)
+			(pos, ref, alt) = vcf_generator_ver2.other_handling(gHGVS, chrom)
 
-		ENTRY['#CHROM'] = get_chromosome(gene).replace('chr','')
+		ENTRY['#CHROM'] = vcf_generator_ver2.get_chromosome(gene).replace('chr','')
 		ENTRY['POS'] = pos
 		ENTRY['REF'] = ref
 		ENTRY['ALT'] = alt
@@ -144,8 +70,8 @@ def create_non_substitution_entries(output):
 def main(input_file, output_file, genome_file, input_template, genesfile):
 	print("Start of code:", tm.ctime(tm.time()))
 	
-	load_human_genome_sequence(genome_file)
-	load_metadata(input_template)
+	vcf_generator_ver2.load_human_genome_sequence(genome_file)
+	vcf_generator_ver2.load_metadata(input_template)
 
 	output = open(output_file, 'w')
 	for line in metadata:
@@ -154,12 +80,12 @@ def main(input_file, output_file, genome_file, input_template, genesfile):
 	output.write(sep.join(headers))
 	output.write('\n')
 
-	create_gene_chromosome_map(genesfile)
-	process_input_file(input_file)
+	vcf_generator_ver2.create_gene_chromosome_map(genesfile)
+	vcf_generator_ver2.process_input_file(input_file)
 
 	print("Total variants in the file:", len(variants_list))
 	
-	segregate_variants()
+	vcf_generator_ver2.segregate_variants()
 	
 	print("#Substitution variants:", len(subs))
 	print("#INDEL variants:", len(others))
