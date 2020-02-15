@@ -1,13 +1,14 @@
-# author -- sayantan
-# The purpose of this code is as follows:
-# 1 -- This code parses through and obtains the genes in the splice_variants.tsv file
-# 2 -- Then for those genes it parses through the file transcripts.tsv and obatins the strong exons (present in all transcripts) 
-#      for those corresponding genes
+# author -- sayantan 
+# The purpose of this code is as follows: 1 -- This code parses through and obtains the genes in 
+# the splice_variants.tsv file 2 -- Then for those genes it parses through the file transcripts.tsv and obtains the 
+# strong exons (present in all transcripts) for those corresponding genes 
 
 from __future__ import print_function
-import re
 import utils
-import time as tm 
+import time as tm
+from collections import OrderedDict
+from collections import defaultdict
+
 
 # The headers in splice_variants.tsv file are as follows:
 # 1 -- Source	
@@ -66,31 +67,50 @@ import time as tm
 # 16 -- positional_override	
 # 17 -- Comments
 
-splice_variant_genes = set()
+def create_gene_transcript_to_exons_map(transcripts_file):
+    genes_exons = OrderedDict()
 
-def create_splice_variants_genes_set(splice_variants_file):
-	for variant in utils.records_iterator(splice_variants_file):
-		splice_variant_genes.add(variant['Gene'])
+    for line in utils.records_iterator(transcripts_file):
+        key = line['Strand_gene_id'] + "|" + line['Transcript_name']
+        if key not in genes_exons:
+            genes_exons[key] = dict()
+        exon_start = line['Exon_start'].split(',')
+        exon_end = line['Exon_end'].split(',')
 
-gene_exons = dict()
+        if '' in exon_start:
+            exon_start.remove('')
+        if '' in exon_end:
+            exon_end.remove('')
 
-def get_strong_exons(transcripts_file):
-	for entry in utils.records_iterator(transcripts_file):
-		if '-'.join(entry['Strand_gene_id'].split('-')[:-2]) in splice_variant_genes:
-			if entry['Strand_gene_id'] not in gene_exons:
-				gene_exons[entry['Strand_gene_id']] = {'exon_start': list(),
-														'exon_end': list()}
-			gene_exons[entry['Strand_gene_id']]['exon_start'].append(entry['Exon_start'])
-			gene_exons[entry['Strand_gene_id']]['exon_end'].append(entry['Exon_end'])
+        genes_exons[key] = {'exon_start': exon_start,
+                            'exon_end': exon_end}
 
-def main(splice_variants_file, transcripts_file):
-	print("Start of code:", tm.ctime(tm.time()))
+    genes_exons_limits = OrderedDict()
 
-	create_splice_variants_genes_set(splice_variants_file)
-	get_strong_exons(transcripts_file)
-	print(gene_exons)
-	print("End of code:", tm.ctime(tm.time()))
+    for key in genes_exons.keys():
+        exon_limits = list()
+        for i in range(len(genes_exons[key]['exon_start'])):
+            exon_limit = (genes_exons[key]['exon_start'][i], genes_exons[key]['exon_end'][i])
+            exon_limits.append(exon_limit)
+        genes_exons_limits[key] = exon_limits
+
+    global exons_dict
+    exons_dict = defaultdict(list)
+
+    for key, value in genes_exons_limits.items():
+        new_key = key.split('|')[0]
+        exons_dict[new_key].extend(value)
+
+
+def main(transcripts_file):
+    print("Start of code:", tm.ctime(tm.time()))
+
+    create_gene_transcript_to_exons_map(transcripts_file)
+
+    print(exons_dict)
+    print("End of code:", tm.ctime(tm.time()))
+
 
 if __name__ == '__main__':
-	import sys
-	main(sys.argv[1], sys.argv[2])
+    import sys
+    main(sys.argv[1])
