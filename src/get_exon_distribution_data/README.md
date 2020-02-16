@@ -19,10 +19,10 @@
 	$DATA/exon_processed_files/strong_exons.tsv \
 	$DATA/exon_with_sequences/strong_exons_sequences.tsv
 
-	DATA=../../data
+	DATA=../../data/output_data/
 	PYTHONPATH=../common:$PYTHONPATH
 	PYTHONPATH=../create_splice_matrices:$PYTHONPATH
-	export PYHTONPATH
+	export PYTHONPATH
 	python get_sequences_for_exon_distribution.py \
 	$DATA/exon_processed_files/rare_exons.tsv \
 	$DATA/exon_with_sequences/rare_exons_sequences.tsv
