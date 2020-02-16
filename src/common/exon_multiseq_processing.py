@@ -1,5 +1,5 @@
 """
-@author : sayantan
+@author: sayantan
 This code consumes the files of exon_distribution.tsv files and converts them into 
 fasta format for bulk upload and scoring in case of MaxEntScan, NNsplice and ASSP.
 """

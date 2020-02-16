@@ -1,6 +1,8 @@
-# author -- sayantan
-# This code consumes a file containing gene name and genomic HGVS and converts it into a VCF file 
-# according to the format specified by Illumina/SpliceAI
+"""
+@author -- sayantan
+This code consumes a file containing gene name and genomic HGVS and converts it into a VCF file 
+according to the format specified by Illumina/SpliceAI
+"""
 
 import time as tm 
 import twobitreader

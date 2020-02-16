@@ -1,8 +1,10 @@
-# author -- sayantan
-# The purpose of this code is as follows:
-# 1 -- This code consumes two files - positive.tsv and negative.tsv and gets some statistics
-# 2 -- It obtains the splice variants from the positive.tsv file and displays splice statistics
-# 3 -- It creates pie charts and bar charts to display the data
+"""
+@author: sayantan
+The purpose of this code is as follows:
+1 -- This code consumes two files - positive.tsv and negative.tsv and gets some statistics
+2 -- It obtains the splice variants from the positive.tsv file and displays splice statistics
+3 -- It creates pie charts and bar charts to display the data
+"""
 
 from __future__ import print_function
 import time as tm
@@ -12,58 +14,62 @@ import re
 import os
 import matplotlib.pyplot as plt
 
-# The headers in the positive.tsv file are as follows:
-# 1 -- CaseID
-# 2 -- UK1
-# 3 -- UK2
-# 4 -- Panel
-# 5 -- Test
-# 6 -- Date/Time
-# 7 -- ClinicalManifestations
-# 8 -- Gender
-# 9 -- Ethnicity
-# 10 -- Age
-# 11 -- ReportWiseGeneListInfo
-# 12 -- UK3
-# 13 -- UK4
-# 14 -- UK5
-# 15 -- Chromosome
-# 16 -- Gene
-# 17 -- p./c.HGVS
-# 18 -- GenomicHGVS
-# 19 -- Transcript
-# 20 -- VariantType
-# 21 -- AlleleFrequency
-# 22 -- GlobalPPDB
-# 23 -- LocalPPDB
-# 24 -- Zygosity
-# 25 -- ClinvarIDs
-# 26 -- VariantLabelReason
-# 27 -- UK6
-# 28 -- rsID
-# 29 -- EVS
-# 30 -- ExAc
-# 31 -- dbSNP
-# 32 -- 1000genomes
-# 33 -- HGMD ID
-# 34 -- Bioinfo Summary
-# 35 -- Literature Summary
+"""
+The headers in the positive.tsv file are as follows:
+1 -- CaseID
+2 -- UK1
+3 -- UK2
+4 -- Panel
+5 -- Test
+6 -- Date/Time
+7 -- ClinicalManifestations
+8 -- Gender
+9 -- Ethnicity
+10 -- Age
+11 -- ReportWiseGeneListInfo
+12 -- UK3
+13 -- UK4
+14 -- UK5
+15 -- Chromosome
+16 -- Gene
+17 -- p./c.HGVS
+18 -- GenomicHGVS
+19 -- Transcript
+20 -- VariantType
+21 -- AlleleFrequency
+22 -- GlobalPPDB
+23 -- LocalPPDB
+24 -- Zygosity
+25 -- ClinvarIDs
+26 -- VariantLabelReason
+27 -- UK6
+28 -- rsID
+29 -- EVS
+30 -- ExAc
+31 -- dbSNP
+32 -- 1000genomes
+33 -- HGMD ID
+34 -- Bioinfo Summary
+35 -- Literature Summary
+"""
 
-# The headers in the negative.tsv file are as follows:
-# 1 -- CaseID
-# 2 -- UK1
-# 3 -- UK2
-# 4 -- Panel
-# 5 -- Test
-# 6 -- Date/Time
-# 7 -- ClinicalManifestations
-# 8 -- Gender
-# 9 -- Ethnicity
-# 10 -- Age
-# 11 -- ReportWiseGeneListInfo
-# 12 -- UK3
-# 13 -- UK4
-# 14 -- UK5
+"""
+The headers in the negative.tsv file are as follows:
+1 -- CaseID
+2 -- UK1
+3 -- UK2
+4 -- Panel
+5 -- Test
+6 -- Date/Time
+7 -- ClinicalManifestations
+8 -- Gender
+9 -- Ethnicity
+10 -- Age
+11 -- ReportWiseGeneListInfo
+12 -- UK3
+13 -- UK4
+14 -- UK5
+"""
 
 def create_age_distribution(age_list):
     below_ten, ten_to_twenty, above_twenty = [0, 0, 0]

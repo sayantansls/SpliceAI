@@ -1,7 +1,9 @@
-# author -- sayantan
-# The purpose of this code is as follows:
-# 1 -- It consumes the output.tsv file and loads the sequences for NNSplice, ASSP and MaxEntScan
-# 2 -- Converts the sequences into fasta format to be used for bulk uploading on the respective_splice_predictors
+"""
+@author: sayantan
+The purpose of this code is as follows:
+1 -- It consumes the output.tsv file and loads the sequences for NNSplice, ASSP and MaxEntScan
+2 -- Converts the sequences into fasta format to be used for bulk uploading on the respective_splice_predictors
+"""
 
 from __future__ import print_function
 import time as tm 
