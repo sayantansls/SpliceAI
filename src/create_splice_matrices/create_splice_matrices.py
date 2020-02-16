@@ -1,52 +1,17 @@
-# author - sayantan
-# The purpose of this code is as follows:
-# 1 -- Consume a tsv file "SpliceVariants.tsv" and get the genomicHGVS
-# 2 -- Create a sliding window range for the particular splice prediction software
-#   a. SplicePort
-#   b. NNSplice
-#   c. ASSP
-#   d. MaxEntScan
-#   e. Human Splicing Finder (HSF)
-# Parse the human genomic sequence and get the sequences for each of the sliding ranges
-# Create a tsv file with the particular variant, details, sequences fdr each predictor
 
-# The headers in the "SpliceVariants.tsv" file are as follows:
-# 1 -- Source
-# 2 -- Case ID
-# 3 -- UK1 (Unknown)
-# 4 -- UK2 (Unknown)
-# 5 -- Panel
-# 6 -- Test
-# 7 -- Time and Date
-# 8 -- ClinicalManifestation
-# 9 -- Gender
-# 10 -- Ethnicity
-# 11 -- Age
-# 12 -- ReportWiseGeneListInfo
-# 13 -- UK3 (Unknown)
-# 14 -- UK4 (Unknown)
-# 15 -- UK5 (Unknown)
-# 16 -- Chromosome
-# 17 -- Gene
-# 18 -- pHGVS
-# 19 -- Genomic HGVS
-# 20 -- Transcript
-# 21 -- VariantType
-# 22 -- AlleleFrequency
-# 23 -- Global PPDB
-# 24 -- Local PPDB
-# 25 -- Zygosity
-# 26 -- Clinvar IDs
-# 27 -- Variant Label Reason
-# 28 -- UK6 (Unknown)
-# 29 -- rsID
-# 30 -- EVS
-# 31 -- ExAc
-# 32 -- dbSNP
-# 33 -- 1000 Genomes
-# 34 -- HGMD ID
-# 35 -- Bioinfo Summary
-# 36 -- Literature Summary
+"""
+@author - sayantan
+The purpose of this code is as follows:
+1 -- Consume a tsv file "SpliceVariants.tsv" and get the genomicHGVS
+2 -- Create a sliding window range for the particular splice prediction software
+  a. SplicePort
+  b. NNSplice
+  c. ASSP
+  d. MaxEntScan
+  e. Human Splicing Finder (HSF)
+Parse the human genomic sequence and get the sequences for each of the sliding ranges
+Create a tsv file with the particular variant, details, sequences fdr each predictor
+"""
 
 from __future__ import print_function
 import time as tm
@@ -137,7 +102,7 @@ ENTRY_T = {'caseID': '',
            'bioinfo_summary': '',
            'literature_summary': ''}
 
-genome = twobitreader.TwoBitFile('/home/sayantan/Desktop/VCF_creation/hg19.2bit')
+genome = twobitreader.TwoBitFile('/home/sayantan/Desktop/hg19.2bit')
 
 
 def get_genomic_position(genomicHGVS):
@@ -272,6 +237,46 @@ def get_sequence(predictor, base, position, chrom):
                                                                                    position:predictor['end']]
     return sequence
 
+
+"""
+The headers in the "SpliceVariants.tsv" file are as follows:
+1 -- Source
+2 -- Case ID
+3 -- UK1 (Unknown)
+4 -- UK2 (Unknown)
+5 -- Panel
+6 -- Test
+7 -- Time and Date
+8 -- ClinicalManifestation
+9 -- Gender
+10 -- Ethnicity
+11 -- Age
+12 -- ReportWiseGeneListInfo
+13 -- UK3 (Unknown)
+14 -- UK4 (Unknown)
+15 -- UK5 (Unknown)
+16 -- Chromosome
+17 -- Gene
+18 -- pHGVS
+19 -- Genomic HGVS
+20 -- Transcript
+21 -- VariantType
+22 -- AlleleFrequency
+23 -- Global PPDB
+24 -- Local PPDB
+25 -- Zygosity
+26 -- Clinvar IDs
+27 -- Variant Label Reason
+28 -- UK6 (Unknown)
+29 -- rsID
+30 -- EVS
+31 -- ExAc
+32 -- dbSNP
+33 -- 1000 Genomes
+34 -- HGMD ID
+35 -- Bioinfo Summary
+36 -- Literature Summary
+"""
 
 def create_splice_matrix(inputfile, outfile):
 

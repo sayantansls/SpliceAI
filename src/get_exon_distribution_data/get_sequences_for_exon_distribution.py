@@ -55,7 +55,7 @@ def process_input_file(input_file, output):
 		strand = gene['Strand']
 		ENTRY['Strand'] = strand
 
-		exon_start, exon_end = [int(gene['Exon Start']), int(gene['Exon End'])]
+		exon_start, exon_end = [int(gene['Exon_start']), int(gene['Exon_end'])]
 		ENTRY['Exon_start'], ENTRY['Exon_end'] = [exon_start, exon_end] 
 		
 		if strand == '+':
@@ -98,7 +98,6 @@ def process_input_file(input_file, output):
 			ENTRY['ASSP/HSF_acceptor_seq'] = create_splice_matrices.create_reverse_complementary_sequence(assp_hsf_acceptor_seq)
 
 		field_values = [str(ENTRY[i]) for i in HEADERS]
-		print(field_values)
 		output.write(sep.join(field_values))
 		output.write('\n')
 
