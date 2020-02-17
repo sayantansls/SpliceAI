@@ -55,7 +55,7 @@ def create_gene_transcripts_map(transcripts_file):
     for key in gene_transcripts.keys():
         gene_transcripts_count[key] = len(gene_transcripts[key])
 
-def create_genes_list_with_three_or_more_transcripts():
+def create_file_genes_list_with_three_or_more_transcripts():
     gene_list = list()
 
     for key in gene_transcripts_count.keys():
@@ -227,30 +227,37 @@ The headers in splice_variants.tsv file are as follows:
 36 -- Literature Summary
 """
 
-def process_strong_exon_entries(splice_variants_file, output_strong_exons):
+def get_file_genes_list_from_file(splice_variants_file):
+    global file_genes_list 
+    file_genes_list = set()
     for entry in utils.records_iterator(splice_variants_file):
-        ENTRY = copy.deepcopy(ENTRY_T)
-        gene = entry['Gene']
-        gene_id = gene_details_dict[gene]['gene_id']
-        ENTRY['Gene'] = gene
-        ENTRY['Chromosome'] = gene_details_dict[gene]['chromosome']
-        ENTRY['Strand'] = gene_details_dict[gene]['strand']
-        exon_ranges = all_strong_exons[gene_id].keys()
-        for item in exon_ranges:
-            (ENTRY['Exon_start'],ENTRY['Exon_end']) = item
+        file_genes_list.add(entry['Gene'])
 
-            field_values = [ENTRY[i] for i in HEADERS]
-            output_strong_exons.write(sep.join(field_values))
-            output_strong_exons.write('\n')
-
-def process_rare_exon_entries(splice_variants_file, output_rare_exons):
-    for entry in utils.records_iterator(splice_variants_file):
+def process_strong_exon_entries(output_strong_exons):
+    for gene_entry in file_genes_list:
         ENTRY = copy.deepcopy(ENTRY_T)
-        gene = entry['Gene']
-        gene_id = gene_details_dict[gene]['gene_id']
-        ENTRY['Gene'] = gene
-        ENTRY['Chromosome'] = gene_details_dict[gene]['chromosome']
-        ENTRY['Strand'] = gene_details_dict[gene]['strand']
+        gene_id = gene_details_dict[gene_entry]['gene_id']
+
+        if gene_transcripts_count[gene_id] >= 3:
+            ENTRY['Gene'] = gene_entry
+            ENTRY['Chromosome'] = gene_details_dict[gene_entry]['chromosome']
+            ENTRY['Strand'] = gene_details_dict[gene_entry]['strand']
+            exon_ranges = all_strong_exons[gene_id].keys()
+            for item in exon_ranges:
+                (ENTRY['Exon_start'],ENTRY['Exon_end']) = item
+                field_values = [ENTRY[i] for i in HEADERS]
+                output_strong_exons.write(sep.join(field_values))
+                output_strong_exons.write('\n')
+        else:
+            continue
+
+def process_rare_exon_entries(output_rare_exons):
+    for gene_entry in file_genes_list:
+        ENTRY = copy.deepcopy(ENTRY_T)
+        gene_id = gene_details_dict[gene_entry]['gene_id']
+        ENTRY['Gene'] = gene_entry
+        ENTRY['Chromosome'] = gene_details_dict[gene_entry]['chromosome']
+        ENTRY['Strand'] = gene_details_dict[gene_entry]['strand']
         exon_ranges = all_rare_exons[gene_id].keys()
         for item in exon_ranges:
             (ENTRY['Exon_start'],ENTRY['Exon_end']) = item
@@ -267,16 +274,17 @@ def main(transcripts_file, splice_variants_file, genes_file, output_strong_exons
     create_gene_details_map(genes_file)
     get_all_strong_exons()
     get_all_rare_exons()
+    get_file_genes_list_from_file(splice_variants_file)
 
     output_strong_exons = open(output_strong_exons_file, 'w')
     output_strong_exons.write(sep.join(HEADERS))
     output_strong_exons.write('\n')
-    process_strong_exon_entries(splice_variants_file, output_strong_exons)
+    process_strong_exon_entries(output_strong_exons)
 
     output_rare_exons = open(output_rare_exons_file, 'w')
     output_rare_exons.write(sep.join(HEADERS))
     output_rare_exons.write('\n')
-    process_rare_exon_entries(splice_variants_file, output_rare_exons)
+    process_rare_exon_entries(output_rare_exons)
 
     print("End of code:", tm.ctime(tm.time()))
 

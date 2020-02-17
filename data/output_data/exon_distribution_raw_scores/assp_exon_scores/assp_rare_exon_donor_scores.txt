@@ -1,0 +1,536 @@
+Sequence: FKTN108403399
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  103|Alt. isoform/cryptic acceptor|agacttgcagTAGAAATAAC|4.610|0.286|0.947|0.051|0.946
+Sequence: FKTN108403399
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  103|Alt. isoform/cryptic acceptor|agacttgcagTAGAAATAAC|4.610|0.286|0.947|0.051|0.946
+Sequence: FKTN108336027
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|GATTTCAAAGgtaaggaatg|12.969|0.343|0.350|0.558|0.373
+Sequence: FKTN108397429
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  25|Alt. isoform/cryptic donor|AGACATGAAGgtccatgtac|5.547|0.443|0.926|0.051|0.945
+  31|Alt. isoform/cryptic donor|GAAGGTCCATgtaccctgtg|7.697|0.443|0.925|0.052|0.944
+  71|Unclassified donor|GCCAACTATGgtaagacctg|12.167|0.529|0.419|0.483|0.000
+Sequence: PLP1103031575
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+Sequence: PLP1103031927
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  50|Alt. isoform/cryptic donor|TACAATTGGAgtcagagtcc|6.314|0.386|0.851|0.111|0.869
+  71|Alt. isoform/cryptic donor|AAAGACATGGgtaagtttca|12.183|0.329|0.554|0.355|0.360
+  100|Alt. isoform/cryptic acceptor|agcattgaagATTCAAGAGG|2.456|0.443|0.929|0.071|0.924
+Sequence: PLP1103041550
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|GAGCGCAACGgtaacagggg|7.960|0.586|0.569|0.343|0.397
+Sequence: PLP1103031927
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  50|Alt. isoform/cryptic donor|TACAATTGGAgtcagagtcc|6.314|0.386|0.851|0.111|0.869
+  71|Alt. isoform/cryptic donor|AAAGACATGGgtaagtttca|12.183|0.329|0.554|0.355|0.360
+  100|Alt. isoform/cryptic acceptor|agcattgaagATTCAAGAGG|2.456|0.443|0.929|0.071|0.924
+Sequence: PLP1103041655
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  29|Alt. isoform/cryptic donor|TTTGGAGCGGgtgtgtcatt|8.126|0.457|0.727|0.217|0.702
+  71|Alt. isoform/cryptic donor|TCCCGACAAGgtgatcatcc|8.370|0.543|0.671|0.259|0.614
+  86|Alt. isoform/cryptic acceptor|tcatcctcagGATTTTGTGG|4.264|0.486|0.526|0.457|0.132
+Sequence: ATP7B52534458
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Unclassified donor|CTTTGTCCAGgtatatatga|10.486|0.514|0.448|0.452|0.000
+  72|Constitutive acceptor|ctttgtccagGTATATATGA|8.229|0.414|0.320|0.650|0.508
+Sequence: ATP7B52532680
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Unclassified donor|CTTGGCAAAGgtaacagcag|12.027|0.443|0.435|0.463|0.000
+  94|Alt. isoform/cryptic acceptor|tcaggttcagAAAAGAGCTG|2.224|0.543|0.766|0.223|0.709
+  113|Alt. isoform/cryptic acceptor|gctccttcagTAAACAAATC|4.288|0.543|0.764|0.230|0.700
+Sequence: ATP7B52536049
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|AAATAAAGCAgtaggtagaa|8.336|0.486|0.752|0.186|0.753
+Sequence: ATP7B52549304
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|GGAATGCATTgtaagtcttg|10.462|0.400|0.784|0.155|0.802
+Sequence: ATP7B52548220
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|GTCGTTTCTGgtacgtagtg|10.566|0.457|0.670|0.256|0.618
+  80|Alt. isoform/cryptic acceptor|tggtacgtagTGTGTTTGAG|2.539|0.471|0.895|0.100|0.888
+Sequence: ATP7B52549304
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|GTCGTTTCTGgtacgtagtg|10.566|0.457|0.670|0.256|0.618
+  80|Alt. isoform/cryptic acceptor|tggtacgtagTGTGTTTGAG|2.539|0.471|0.895|0.100|0.888
+Sequence: ATP7B52523932
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|ATACTTTCCTgtaagttgaa|10.538|0.357|0.546|0.362|0.337
+  77|Alt. isoform/cryptic acceptor|ttcctgtaagTTGAATGCCT|2.426|0.386|0.627|0.353|0.437
+Sequence: TNNT155645524
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|GAAATATGAGgtgagaccca|12.459|0.686|0.208|0.726|0.713
+  91|Alt. isoform/cryptic acceptor|agctccgcagGGAGGGAGGG|3.939|0.529|0.716|0.271|0.622
+Sequence: TNNT155657834
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|GCAGAGCCAGgtaaccgcgg|11.322|0.729|0.322|0.577|0.441
+Sequence: TNNT155645572
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|GAAATATGAGgtgagaccca|12.459|0.686|0.208|0.726|0.713
+  91|Alt. isoform/cryptic acceptor|agctccgcagGGAGGGAGGG|3.939|0.529|0.716|0.271|0.622
+Sequence: SGCE94229035
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|AAACACCAGAgtaagtgtct|14.803|0.400|0.090|0.872|0.896
+Sequence: SGCE94217124
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+Sequence: SGCE94227316
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|CGCCTCCCAGgttcaagtga|4.743|0.571|0.882|0.085|0.903
+  72|Constitutive acceptor|cgcctcccagGTTCAAGTGA|9.511|0.629|0.167|0.827|0.798
+  96|Alt. isoform/cryptic acceptor|cctgcctcagCCTCCCAAGT|7.187|0.586|0.656|0.335|0.490
+  105|Alt. isoform/cryptic acceptor|gcctcccaagTAGCTCGGAT|2.204|0.614|0.949|0.047|0.951
+Sequence: PLA2G638577836
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  61|Alt. isoform/cryptic donor|GAAGTGCTGAgtaagccgag|5.991|0.714|0.960|0.026|0.973
+  71|Alt. isoform/cryptic donor|GTAAGCCGAGgtgagtgacc|14.146|0.729|0.627|0.288|0.540
+Sequence: PLA2G638524437
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|AACAACCTAGgtaggcctcg|9.086|0.686|0.378|0.520|0.273
+  105|Constitutive acceptor|tcttctccagCTGGTTCCCA|11.627|0.614|0.253|0.738|0.658
+  116|Alt. isoform/cryptic acceptor|tggttcccagGCCCCTGGAT|5.114|0.614|0.584|0.404|0.308
+Sequence: PLA2G638577761
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+Sequence: NIPBL37065921
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  38|Alt. isoform/cryptic donor|ATTTTCAAGAgtacattttg|6.037|0.257|0.821|0.133|0.837
+  100|Constitutive acceptor|ttctttctagTGATGTCATG|6.785|0.243|0.369|0.602|0.387
+Sequence: NIPBL37065921
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  38|Alt. isoform/cryptic donor|ATTTTCAAGAgtacattttg|6.037|0.257|0.821|0.133|0.837
+  100|Constitutive acceptor|ttctttctagTGATGTCATG|6.785|0.243|0.369|0.602|0.387
+Sequence: NIPBL37064080
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  36|Alt. isoform/cryptic donor|GATGATGAAAgtgatgggga|4.705|0.600|0.837|0.122|0.855
+  71|Alt. isoform/cryptic donor|CACTTCAGGGgtgaggcgga|7.844|0.400|0.871|0.093|0.894
+  105|Alt. isoform/cryptic acceptor|tatttcgcagCGTATTACGT|2.910|0.571|0.561|0.422|0.248
+Sequence: CAPN342678483
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|CCACTTCCAGgtgaggtaat|13.522|0.600|0.118|0.837|0.858
+  72|Constitutive acceptor|ccacttccagGTGAGGTAAT|11.035|0.457|0.445|0.548|0.188
+Sequence: CAPN342698141
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|AAAAACCAAGgtaggtgtgt|13.650|0.457|0.220|0.706|0.688
+Sequence: CAPN342691850
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  31|Alt. isoform/cryptic donor|GGGCCGCTGGgtacggggtt|5.627|0.657|0.777|0.165|0.788
+  71|Constitutive donor|AACTTCCCAGgtgggagatg|13.580|0.529|0.170|0.769|0.779
+  72|Constitutive acceptor|aacttcccagGTGGGAGATG|5.166|0.657|0.383|0.603|0.364
+Sequence: CAPN342695975
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|TCGGCCAGTGgtgagtggtt|11.312|0.543|0.238|0.689|0.655
+Sequence: CAPN342680084
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|CTTATGCTAAgtaagcaaca|9.364|0.500|0.570|0.330|0.421
+Sequence: CAPN342686539
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  42|Alt. isoform/cryptic donor|GTGGGGCCAGgtggagtgga|5.154|0.629|0.756|0.181|0.760
+  71|Alt. isoform/cryptic donor|GGAGTGATAGgtaggtgagg|10.953|0.671|0.694|0.215|0.690
+  72|Alt. isoform/cryptic acceptor|ggagtgatagGTAGGTGAGG|3.366|0.586|0.952|0.044|0.954
+Sequence: CAPN342676750
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|GGAGAGCTAGgtaggaaagt|9.016|0.514|0.720|0.206|0.714
+  104|Alt. isoform/cryptic acceptor|atcctgccagATGATCAAGG|2.738|0.529|0.628|0.352|0.440
+Sequence: CAPN342684920
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  32|Alt. isoform/cryptic donor|CTGCGGGCTGgtcagaggtc|5.875|0.643|0.834|0.124|0.851
+  39|Alt. isoform/cryptic donor|CTGGTCAGAGgtcacgccta|4.667|0.657|0.817|0.134|0.835
+  71|Constitutive donor|GCTGGATGAGgtaagcctgg|13.597|0.586|0.104|0.851|0.877
+Sequence: CAPN342700522
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|GTCCCCACAGgtgtctgggc|10.989|0.629|0.530|0.381|0.280
+  72|Constitutive acceptor|gtccccacagGTGTCTGGGC|3.782|0.557|0.308|0.673|0.542
+  116|Alt. isoform/cryptic acceptor|cacgctacagGGGCTTCCTA|2.372|0.600|0.950|0.048|0.950
+Sequence: CAPN342694333
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  59|Alt. isoform/cryptic donor|TCTTCTCAAGgttcccaaag|5.777|0.629|0.925|0.054|0.942
+  71|Alt. isoform/cryptic donor|TCCCAAAGAGgtatagcagc|8.636|0.643|0.783|0.158|0.799
+  117|Alt. isoform/cryptic acceptor|cactacccagGGGGCCCCGA|2.531|0.543|0.946|0.049|0.948
+Sequence: CAPN342694756
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|AGCTGTTCTGgtaagtgtcc|13.710|0.457|0.149|0.793|0.812
+Sequence: CAPN342682294
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|ACCGACCCGGgtgtgtacac|9.486|0.529|0.227|0.707|0.679
+  95|Alt. isoform/cryptic acceptor|cgattatcagAACTGACCAT|3.916|0.571|0.868|0.123|0.858
+Sequence: CAPN342689075
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  48|Constitutive donor|GCAGCACCAGgtcactgagg|8.225|0.557|0.363|0.550|0.340
+  71|Constitutive donor|GAGAGTTCTGgtgagtccag|12.921|0.557|0.201|0.730|0.725
+  82|Alt. isoform/cryptic acceptor|gtgagtccagAACCCAGGAA|3.545|0.557|0.966|0.032|0.967
+Sequence: CAPN342681294
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|CTCCATTGATgtaagtctgg|10.555|0.586|0.376|0.525|0.284
+Sequence: CAPN342694008
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|CATCTACGAGgtgtgcagtc|12.086|0.571|0.137|0.817|0.832
+  96|Alt. isoform/cryptic acceptor|ttggctccagCCCAGGAAAC|3.918|0.571|0.946|0.052|0.945
+  101|Alt. isoform/cryptic acceptor|tccagcccagGAAACATACT|5.037|0.586|0.735|0.253|0.657
+  118|Alt. isoform/cryptic acceptor|actttcccagGGAGGACGCT|5.203|0.543|0.825|0.159|0.807
+Sequence: CAPN342695200
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Unclassified donor|ACCTCTCTGAgtgagtgctg|10.643|0.543|0.443|0.466|0.000
+Sequence: CAPN342697153
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|GGCACGTCACgtgagtagag|9.437|0.514|0.355|0.559|0.365
+Sequence: CAPN342652312
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|GAGACCTCCGgtgagtagct|13.025|0.629|0.070|0.906|0.923
+Sequence: BRCA141201211
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|CCTTGGCACAgtaagtattg|13.235|0.514|0.133|0.817|0.837
+  73|Alt. isoform/cryptic acceptor|cttggcacagTAAGTATTGG|2.951|0.514|0.845|0.149|0.823
+  95|Alt. isoform/cryptic acceptor|gccctgtcagAGAGGGAGGA|2.800|0.514|0.828|0.163|0.803
+Sequence: BRCA141277468
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|TCTGCTCTGGgtaaaggtag|6.451|0.600|0.632|0.287|0.546
+  78|Alt. isoform/cryptic acceptor|ctgggtaaagGTAGTAGAGT|2.236|0.600|0.897|0.094|0.895
+Sequence: BRCA141246877
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  63|Alt. isoform/cryptic donor|ATCCAGAAAAgtatcagggt|7.070|0.443|0.718|0.214|0.702
+  71|Alt. isoform/cryptic donor|AAGTATCAGGgtagttctgt|7.230|0.443|0.788|0.154|0.805
+Sequence: BRCA141277500
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  65|Alt. isoform/cryptic donor|TCTGCTCTGGgtaaaggtag|6.451|0.600|0.632|0.287|0.546
+  71|Alt. isoform/cryptic donor|CTGGGTAAAGgtagtagagt|7.825|0.614|0.838|0.114|0.864
+  72|Alt. isoform/cryptic acceptor|ctgggtaaagGTAGTAGAGT|2.236|0.600|0.897|0.094|0.895
+Sequence: BRCA141246877
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|TCAAACTTAGgtattggaac|7.151|0.371|0.618|0.294|0.524
+  104|Alt. isoform/cryptic acceptor|tttgccccagTCTATTTATA|6.542|0.386|0.512|0.477|0.067
+  115|Alt. isoform/cryptic acceptor|ctatttatagAAGTGAGCTA|5.261|0.386|0.539|0.447|0.172
+Sequence: BRCA141228628
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  43|Alt. isoform/cryptic donor|AGTTCTACCAgtaaaaataa|5.272|0.357|0.899|0.069|0.923
+  71|Alt. isoform/cryptic donor|GAGTGGAAAGgtaagaaaca|12.031|0.286|0.536|0.366|0.316
+Sequence: BRCA141267796
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|TATTTTGCAAgtaagtttga|12.795|0.371|0.336|0.575|0.415
+  107|Alt. isoform/cryptic acceptor|ccattattagCTTTTGTTTT|3.335|0.386|0.817|0.170|0.791
+Sequence: BRCA141228631
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  43|Alt. isoform/cryptic donor|AGTTCTACCAgtaaaaataa|5.272|0.357|0.899|0.069|0.923
+  71|Alt. isoform/cryptic donor|GAGTGGAAAGgtaagaaaca|12.031|0.286|0.536|0.366|0.316
+Sequence: BRCA141231416
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|CATATATCAGgtgcctctcc|11.587|0.443|0.557|0.367|0.342
+Sequence: LAMA2129796546
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Unclassified donor|TGAAAGCAAGgtaaaattta|12.593|0.371|0.434|0.468|0.000
+Sequence: PDHA119369525
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|GAGCTTACAGgtttgctgtt|8.140|0.314|0.587|0.331|0.437
+  72|Alt. isoform/cryptic acceptor|gagcttacagGTTTGCTGTT|4.148|0.586|0.616|0.367|0.405
+  91|Alt. isoform/cryptic acceptor|tgatttacagAAAGGGGAAA|6.415|0.486|0.725|0.269|0.629
+Sequence: PDHA119364741
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|AACCAGGCAGgtagggagat|12.118|0.386|0.379|0.528|0.282
+  91|Alt. isoform/cryptic acceptor|tttatctcagGCTTAAAGAT|2.414|0.500|0.679|0.308|0.547
+Sequence: PDHA119369525
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|GAGCTTACAGgtttgctgtt|8.140|0.314|0.587|0.331|0.437
+  72|Alt. isoform/cryptic acceptor|gagcttacagGTTTGCTGTT|4.148|0.586|0.616|0.367|0.405
+  91|Alt. isoform/cryptic acceptor|tgatttacagAAAGGGGAAA|6.415|0.486|0.725|0.269|0.629
+Sequence: PDHA119372701
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  32|Alt. isoform/cryptic donor|AAAAGATGAGgtctgcctga|5.521|0.429|0.952|0.033|0.965
+  57|Alt. isoform/cryptic donor|TATGGCGATGgtgctgctaa|4.837|0.314|0.809|0.147|0.818
+  71|Constitutive donor|TGCTAACCAGgtaattatgt|12.269|0.257|0.142|0.801|0.823
+  72|Alt. isoform/cryptic acceptor|tgctaaccagGTAATTATGT|2.986|0.443|0.830|0.166|0.800
+  117|Alt. isoform/cryptic acceptor|attttcaaagTCTTTAATAT|4.225|0.371|0.612|0.363|0.407
+Sequence: DYSF71681216
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Unclassified donor|GTGTTTGCAGgtaggagggg|12.660|0.757|0.409|0.490|0.000
+  72|Alt. isoform/cryptic acceptor|gtgtttgcagGTAGGAGGGG|6.531|0.600|0.710|0.271|0.618
+Sequence: DYSF71776521
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  41|Alt. isoform/cryptic donor|GAGCCTGCAGgtgctgtcaa|7.196|0.586|0.782|0.168|0.786
+  71|Alt. isoform/cryptic donor|GCCTCAGACTgtacgttgct|7.478|0.629|0.743|0.195|0.738
+Sequence: DYSF71694063
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|ACTTTCCGAGgtgagagccc|13.022|0.729|0.209|0.727|0.712
+Sequence: DYSF71847739
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|CAGTCCTCATgtatgtactg|10.005|0.514|0.390|0.520|0.250
+Sequence: DYSF71740462
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|GCCCCCACGGgtgagacacg|10.393|0.586|0.180|0.758|0.763
+  105|Alt. isoform/cryptic acceptor|ctgatcccagACCCTCCCTG|6.486|0.629|0.922|0.073|0.920
+Sequence: ALS2202582933
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|CTAAAGTTTTgtgagtaact|10.960|0.329|0.807|0.142|0.824
+Sequence: ALS2202569326
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|TACGGGCCAGgtaactgttt|12.251|0.314|0.131|0.815|0.840
+  99|Alt. isoform/cryptic acceptor|ttgttattagTGAGTCGTTA|2.929|0.371|0.776|0.212|0.727
+Sequence: ALS2202588164
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|TAAAATGATGgtgagtggaa|12.361|0.286|0.356|0.560|0.364
+  115|Alt. isoform/cryptic acceptor|ctttttaaagCTCCTTTGTC|2.782|0.300|0.909|0.084|0.908
+Sequence: ALS2202591272
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|TGGAAGATGGgtaagaaaat|10.292|0.271|0.621|0.293|0.528
+Sequence: ALS2202574761
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  66|Alt. isoform/cryptic donor|TTTCCAGCTGgtgaggtaag|10.723|0.429|0.594|0.332|0.441
+  71|Alt. isoform/cryptic donor|AGCTGGTGAGgtaagagagc|10.585|0.400|0.557|0.345|0.381
+  94|Alt. isoform/cryptic acceptor|ttcactaaagTCTGCGGGCT|2.852|0.386|0.845|0.150|0.823
+Sequence: ALS2202589182
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  24|Alt. isoform/cryptic donor|TGGCCAGTGGgtaatggata|5.492|0.371|0.925|0.052|0.944
+  49|Alt. isoform/cryptic donor|GCAGGATATGgtgtctttga|4.678|0.371|0.904|0.068|0.925
+  71|Alt. isoform/cryptic donor|ATATCACTAGgtacagtatt|9.592|0.357|0.625|0.289|0.538
+  100|Constitutive acceptor|attcccacagTTTAAGCCAA|9.443|0.400|0.392|0.592|0.339
+Sequence: ALS2202590177
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  24|Alt. isoform/cryptic donor|AGACCATTATgtgggccatt|5.503|0.471|0.855|0.105|0.877
+  71|Constitutive donor|GAGTCTACAGgtaacattgg|12.188|0.357|0.223|0.697|0.681
+  72|Alt. isoform/cryptic acceptor|gagtctacagGTAACATTGG|2.272|0.429|0.708|0.280|0.604
+Sequence: ALS2202569923
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|AGCAGATCAGgtaatctctg|11.207|0.271|0.248|0.673|0.632
+Sequence: ALS2202592498
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  67|Constitutive donor|GAAGCTGGTGgtgtgtaagt|9.202|0.586|0.296|0.619|0.521
+  71|Unclassified donor|CTGGTGGTGTgtaagtgcgt|8.459|0.571|0.467|0.427|0.000
+Sequence: ALS2202614512
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|TCTTGCAAAGgtacttttgt|11.517|0.343|0.247|0.677|0.636
+  72|Alt. isoform/cryptic acceptor|tcttgcaaagGTACTTTTGT|4.963|0.457|0.503|0.474|0.057
+  115|Alt. isoform/cryptic acceptor|caattcttagCTGTAACACC|4.005|0.386|0.710|0.278|0.608
+Sequence: ALS2202626541
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  25|Alt. isoform/cryptic donor|ACTTATGCTAgtaacaatgt|5.283|0.186|0.908|0.063|0.931
+  33|Alt. isoform/cryptic donor|TAGTAACAATgtgtgtgttt|9.554|0.157|0.829|0.124|0.851
+  35|Alt. isoform/cryptic donor|GTAACAATGTgtgtgtttct|6.772|0.157|0.890|0.077|0.913
+Sequence: ALS2202575831
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Unclassified donor|TTTAATAAAGgtaaactaga|12.690|0.286|0.452|0.456|0.000
+Sequence: ALS2202568941
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  48|Alt. isoform/cryptic donor|GGGGAACAGGgtataatgtt|6.211|0.286|0.672|0.250|0.628
+  71|Constitutive donor|CACCTTGAAGgtgagtatag|13.468|0.243|0.250|0.673|0.629
+  72|Alt. isoform/cryptic acceptor|caccttgaagGTGAGTATAG|5.308|0.471|0.753|0.237|0.685
+Sequence: ALS2202580562
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|ACAGAGACAGgtgagtgaac|14.065|0.429|0.114|0.843|0.865
+  99|Alt. isoform/cryptic acceptor|caacatacagCAGAGCATGT|3.264|0.571|0.925|0.072|0.923
+Sequence: ALS2202591589
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|CTCATGGCAGgtgaaaatgt|8.226|0.329|0.673|0.258|0.616
+Sequence: ALS2202598161
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|TTTTGAAGTGgtaagctccc|10.806|0.400|0.629|0.285|0.548
+Sequence: ALS2202593906
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|AAAAATGACGgtaagccatg|10.860|0.371|0.318|0.596|0.467
+  105|Alt. isoform/cryptic acceptor|gttaccctagCAAACAGCAA|5.453|0.500|0.643|0.344|0.465
+Sequence: ALS2202617965
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  33|Alt. isoform/cryptic donor|CTGGAGGCAGgtggttacca|5.293|0.414|0.907|0.067|0.926
+  71|Constitutive donor|GAAATCCCAGgtaggaggca|12.073|0.400|0.210|0.718|0.707
+  72|Alt. isoform/cryptic acceptor|gaaatcccagGTAGGAGGCA|2.314|0.486|0.728|0.261|0.642
+  116|Alt. isoform/cryptic acceptor|ttcatggaagGCCAACATGA|4.186|0.400|0.789|0.201|0.745
+Sequence: ALS2202587843
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|TAGTGGAAAGgttggaaact|7.920|0.200|0.780|0.161|0.794
+Sequence: ALS2202603458
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  33|Alt. isoform/cryptic donor|AAATTTCCTGgttatgggag|4.523|0.471|0.877|0.093|0.894
+  71|Alt. isoform/cryptic donor|AGCCTGCCATgtaagcaaac|8.567|0.414|0.689|0.238|0.654
+  95|Alt. isoform/cryptic acceptor|caccttccagTTATCATTCT|4.830|0.486|0.818|0.172|0.790
+  116|Alt. isoform/cryptic acceptor|tccgccaaagATGACATTTT|6.467|0.486|0.793|0.202|0.745
+Sequence: ALS2202626541
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  26|Constitutive donor|AGATCATTCAgtaagagagg|8.390|0.414|0.366|0.544|0.326
+  71|Constitutive donor|GCCATCTCAGgtacctgctc|13.554|0.314|0.161|0.781|0.794
+  72|Unclassified acceptor|gccatctcagGTACCTGCTC|5.571|0.486|0.481|0.486|0.000
+Sequence: ALS2202611471
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  66|Alt. isoform/cryptic donor|CTCTCCTGTAgtaaggtgaa|5.175|0.371|0.823|0.121|0.853
+  71|Alt. isoform/cryptic donor|CTGTAGTAAGgtgaacagga|7.041|0.343|0.875|0.086|0.902
+  72|Alt. isoform/cryptic acceptor|ctgtagtaagGTGAACAGGA|3.070|0.443|0.611|0.370|0.394
+Sequence: ALS2202593363
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|CCATGCCCAGgtaggctgga|13.352|0.400|0.140|0.805|0.825
+  72|Alt. isoform/cryptic acceptor|ccatgcccagGTAGGCTGGA|5.723|0.500|0.735|0.254|0.654
+Sequence: ALS2202606577
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  110|Unclassified acceptor|atctctgcagGGTTATTCTG|7.399|0.429|0.495|0.488|0.000
+Sequence: ALS2202622482
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|TTGTCACAAGgtaaggaaat|11.380|0.429|0.322|0.590|0.454
+  72|Alt. isoform/cryptic acceptor|ttgtcacaagGTAAGGAAAT|2.380|0.500|0.924|0.072|0.922
+  118|Unclassified acceptor|gggaatccagGATGCTCCTG|3.579|0.429|0.498|0.479|0.000
+Sequence: ALS2202566612
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  99|Constitutive acceptor|tcctaaacagATCGAGGGAA|7.977|0.229|0.448|0.531|0.156
+Sequence: ALS2202609152
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|CTCAGTTTAGgtaagttgca|12.329|0.429|0.540|0.359|0.335
+  72|Alt. isoform/cryptic acceptor|ctcagtttagGTAAGTTGCA|8.528|0.357|0.771|0.210|0.728
+  112|Alt. isoform/cryptic acceptor|aaaccatcagGTCTTTATCT|3.283|0.486|0.920|0.075|0.918
+Sequence: ALS2202619394
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Unclassified donor|TTCTGCCTAGgtaagcgcta|9.853|0.414|0.494|0.401|0.000
+  72|Constitutive acceptor|ttctgcctagGTAAGCGCTA|4.986|0.600|0.117|0.876|0.867
+Sequence: ALS2202570184
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|GAGTAAAAAGgtatagtaga|10.512|0.329|0.648|0.267|0.588
+  97|Alt. isoform/cryptic acceptor|ttttcctcagCAAATATGCT|12.466|0.371|0.509|0.486|0.046
+Sequence: ALS2202571745
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Unclassified donor|GGGTGCAGAGgtaagtgtag|12.886|0.300|0.480|0.417|0.000
+Sequence: ALS2202592001
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Unclassified donor|CCAGGAAAAGgttagtctat|12.171|0.386|0.454|0.457|0.000
+Sequence: ALS2202572714
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|CAGAGCCAGGgtaaatggag|7.117|0.457|0.500|0.408|0.185
+Sequence: SLC25A22796263
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  27|Alt. isoform/cryptic donor|CTGAGGATCTgtgggtgtga|6.214|0.729|0.939|0.043|0.954
+  31|Alt. isoform/cryptic donor|GGATCTGTGGgtgtgagcca|8.294|0.743|0.734|0.201|0.726
+  71|Constitutive donor|GGCGCTGCCGgtgggtgaaa|7.628|0.657|0.333|0.589|0.435
+Sequence: SLC25A22797995
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|TTTCTTGGGGgtaggaggag|8.827|0.571|0.828|0.124|0.850
+  76|Alt. isoform/cryptic acceptor|ttgggggtagGAGGAGCCTG|3.201|0.643|0.642|0.339|0.473
+Sequence: SLC25A22798269
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|GGCGAGCGTGgtgagtgtct|14.971|0.757|0.078|0.886|0.912
+Sequence: ALDH7A1125890085
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  45|Alt. isoform/cryptic donor|AAGAAAGAAGgtggcacagt|7.046|0.486|0.716|0.216|0.699
+  71|Constitutive donor|TGGGGGCAAGgtaagggatg|13.739|0.457|0.114|0.838|0.864
+Sequence: ALDH7A1125891707
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|CCATGGGACCgtgagtatct|11.915|0.414|0.297|0.628|0.527
+  98|Alt. isoform/cryptic acceptor|gctttcaaagCGATCCCTTT|5.789|0.486|0.842|0.150|0.822
+Sequence: APTX32988127
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  62|Alt. isoform/cryptic donor|ATATGTCAAGgtaaagcagg|11.023|0.314|0.579|0.327|0.435
+  71|Unclassified donor|GGTAAAGCAGgtaggtgtat|14.427|0.314|0.418|0.479|0.000
+Sequence: APTX32973686
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+Sequence: APTX32997346
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  55|Alt. isoform/cryptic donor|AGTCTCCCAAgtagcaggga|7.132|0.529|0.700|0.231|0.671
+  71|Alt. isoform/cryptic donor|GGGACTACAGgtacgtgcca|12.927|0.457|0.541|0.364|0.329
+  113|Alt. isoform/cryptic acceptor|ttttttgaagGCTGGGCTCA|4.680|0.529|0.886|0.110|0.876
+Sequence: APTX32973650
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+Sequence: APTX33001574
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  54|Alt. isoform/cryptic donor|GTTTGTTCACgtgtgctccc|5.816|0.500|0.860|0.102|0.882
+  71|Alt. isoform/cryptic donor|CCCGACACCTgtatgtacct|9.805|0.500|0.617|0.298|0.516
+Sequence: APTX32987729
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|TATCAAAAAGgtgagggtag|14.382|0.343|0.126|0.830|0.848
+Sequence: APTX32987844
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  38|Alt. isoform/cryptic donor|GGACCAAGAGgtgaagctgc|7.197|0.457|0.827|0.125|0.849
+  71|Alt. isoform/cryptic donor|TCTCCACATGgtgaatgaac|5.754|0.414|0.793|0.158|0.801
+  100|Alt. isoform/cryptic acceptor|tatattgtagAGTTTGAGGA|2.994|0.471|0.617|0.366|0.406
+Sequence: APTX33001610
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|AATGCCGCGGgtgagcgttc|10.437|0.586|0.329|0.596|0.449
+Sequence: APTX33001639
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|ACTTCTGGAGgtaaggcggt|12.043|0.657|0.285|0.628|0.545
+Sequence: APTX32987844
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|TATCAAAAAGgtgagggtag|14.382|0.343|0.126|0.830|0.848
+Sequence: PEX192148392
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  35|Alt. isoform/cryptic donor|ACAAGTTGAGgtggaacccc|4.859|0.386|0.928|0.050|0.946
+  71|Alt. isoform/cryptic donor|GGAGATACTGgtaaagaaaa|8.396|0.257|0.536|0.377|0.296
+  107|Alt. isoform/cryptic acceptor|ctcatttaagGTTAAATTAC|5.127|0.386|0.606|0.367|0.394
+Sequence: PEX192148392
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  36|Alt. isoform/cryptic donor|GGAGATACTGgtaaagaaaa|8.396|0.257|0.536|0.377|0.296
+  71|Alt. isoform/cryptic donor|CTCATTTAAGgttaaattac|7.578|0.257|0.765|0.175|0.771
+  72|Alt. isoform/cryptic acceptor|ctcatttaagGTTAAATTAC|5.127|0.386|0.606|0.367|0.394
+  104|Alt. isoform/cryptic acceptor|atgtctttagCTTTCTCTAA|3.331|0.271|0.506|0.474|0.064
+  115|Alt. isoform/cryptic acceptor|tttctctaagCTTTATTATA|5.001|0.271|0.603|0.371|0.385
+Sequence: PEX192134216
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|CTTGCTCATGgtaaatgcat|7.693|0.357|0.393|0.519|0.243
+  116|Alt. isoform/cryptic acceptor|cttttgtcagTCAGCATTTT|8.011|0.514|0.804|0.187|0.768
+Sequence: RYR139014569
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|AGATATACAGgtcagcccca|10.444|0.629|0.500|0.408|0.185
+Sequence: SCN1A166900559
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|TCTGCCAGAGgtgataatag|7.638|0.400|0.408|0.505|0.192
+Sequence: SCN1A167005642
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|TCTTTTGGGGgtaaatattt|9.313|0.400|0.809|0.138|0.830
+  95|Alt. isoform/cryptic acceptor|catgtttcagCAGTTTATGT|6.827|0.400|0.689|0.300|0.564
+  98|Alt. isoform/cryptic acceptor|gtttcagcagTTTATGTACT|4.240|0.400|0.737|0.252|0.657
+  112|Alt. isoform/cryptic acceptor|tgtactacagTCTTGGCAGA|4.797|0.357|0.898|0.096|0.893
+Sequence: SCN1A166900559
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  38|Constitutive donor|TCTGCCAGAGgtgataatag|7.638|0.400|0.408|0.505|0.192
+  71|Constitutive donor|TGATGACAATgtaaggaagt|9.600|0.443|0.325|0.584|0.443
+  96|Alt. isoform/cryptic acceptor|aatagttcagGCATGGCTGG|3.378|0.386|0.613|0.369|0.398
+Sequence: SCN1A166900559
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  57|Alt. isoform/cryptic donor|GATTGCAATGgtgtggtttc|8.385|0.529|0.782|0.166|0.788
+  71|Alt. isoform/cryptic donor|GGTTTCCTTGgttggtggac|5.580|0.500|0.941|0.039|0.958
+  88|Alt. isoform/cryptic acceptor|ggaccttcagTTCCTACATC|3.878|0.529|0.552|0.439|0.205
+  111|Alt. isoform/cryptic acceptor|tgttggacagCTTCTGCCAG|2.954|0.514|0.695|0.294|0.577
+Sequence: SCN1A166930149
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  25|Alt. isoform/cryptic donor|CAGAGATGGTgtcagagccc|5.568|0.443|0.691|0.241|0.652
+  71|Constitutive donor|CAATAAGAAAgtgagtgttt|13.437|0.414|0.156|0.792|0.803
+  90|Alt. isoform/cryptic acceptor|tttttatcagGCATATTTTG|7.262|0.457|0.565|0.422|0.253
+Sequence: SCN1A166934311
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|AAATCCTAAGgtatgcaatt|9.909|0.357|0.851|0.103|0.879
+Sequence: SCN1A166930180
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  25|Alt. isoform/cryptic donor|CAGAGATGGTgtcagagccc|5.568|0.443|0.691|0.241|0.652
+  71|Constitutive donor|CAATAAGAAAgtgagtgttt|13.437|0.414|0.156|0.792|0.803
+  90|Alt. isoform/cryptic acceptor|tttttatcagGCATATTTTG|7.262|0.457|0.565|0.422|0.253
+Sequence: WFS16279414
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|GACGGCACCGgtaagggagc|9.591|0.643|0.115|0.839|0.862
+Sequence: WFS16279414
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Constitutive donor|GACGGCACCGgtaagggagc|9.591|0.643|0.115|0.839|0.862
+Sequence: SIGMAR134637823
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Alt. isoform/cryptic donor|CTCTGGCTGGgtacgcagag|8.307|0.643|0.801|0.149|0.814
+  95|Alt. isoform/cryptic acceptor|cgtcttccagCGCGAAGAGA|7.176|0.657|0.843|0.148|0.824
+Sequence: SIGMAR134637417
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  24|Unclassified donor|CGCTGTCCGAgtatgtgctg|8.285|0.700|0.418|0.492|0.000
+  71|Alt. isoform/cryptic donor|GGCCACTCGGgtcagtgcta|7.588|0.629|0.679|0.252|0.629
+Sequence: SIGMAR134635637
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+Sequence: SIGMAR134637417
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  44|Alt. isoform/cryptic donor|TGGGCGCCATgtgccttctg|5.343|0.686|0.908|0.066|0.927
+  71|Unclassified donor|CGCTGTCCGAgtatgtgctg|8.285|0.700|0.418|0.492|0.000
+Sequence: SIGMAR134637768
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Unclassified donor|CAGTACGCTGgtgagcgggc|9.952|0.743|0.466|0.440|0.000
+Sequence: SIGMAR134635855
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+Sequence: SIGMAR134637823
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  71|Unclassified donor|CAGTACGCTGgtgagcgggc|9.952|0.743|0.466|0.440|0.000
+Sequence: SIGMAR134637109
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  53|Alt. isoform/cryptic donor|ACCACCAAAAgtgaggtctt|8.641|0.614|0.652|0.269|0.587
+  71|Alt. isoform/cryptic donor|TTCTACCCAGgtgggtaaga|11.384|0.614|0.603|0.310|0.486
+  72|Alt. isoform/cryptic acceptor|ttctacccagGTGGGTAAGA|7.003|0.543|0.593|0.395|0.334
+Sequence: SIGMAR134635855
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+Sequence: SIGMAR134637086
+  Position|Putative splice site|SequenceScore|Intron GC|Activation alt./cryptic|Activation constitutive|Confidence
+  53|Alt. isoform/cryptic donor|ACCACCAAAAgtgaggtctt|8.641|0.614|0.652|0.269|0.587
+  71|Alt. isoform/cryptic donor|TTCTACCCAGgtgggtaaga|11.384|0.614|0.603|0.310|0.486
+  72|Alt. isoform/cryptic acceptor|ttctacccagGTGGGTAAGA|7.003|0.543|0.593|0.395|0.334

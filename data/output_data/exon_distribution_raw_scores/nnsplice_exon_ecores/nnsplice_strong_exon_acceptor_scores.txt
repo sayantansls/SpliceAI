@@ -1,0 +1,1254 @@
+Splice site predictions for 230 sequences (exon/intron boundary shown in larger font):
+
+Acceptor site predictions for FKTN108382215 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.99     aggttttcatcttccccataggtagaagacagcttggaact
+
+
+Acceptor site predictions for FKTN108358879 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.98     gttcttttgttgtcttcctagaatggagctggtttgtcaaa
+
+
+Acceptor site predictions for FKTN108363426 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.51     aattctttttctctcaaacagcgtgcagttaaaaaatttat
+
+
+Acceptor site predictions for FKTN108380240 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.99     aaaatttaatcttctttttaggatggtatcgacaatgcaac
+
+
+Acceptor site predictions for FKTN108377559 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.23     gactatttattatatctgtagcagtaccttgatgataacac
+
+
+Acceptor site predictions for FKTN108320411 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for FKTN108337226 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.90     aaatatcttttttgttcacagaaaacaaaattatcttcctt
+
+
+Acceptor site predictions for FKTN108370100 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.97     aatcttaacttttgttttcaggccagagttacagcaagtta
+
+
+Acceptor site predictions for FKTN108366496 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.95     ttgatgcttctttggttctaggaaggctggtttcggatagc
+
+
+Acceptor site predictions for PLP1103044262 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.87     tcctctttcattttcctgcagttccaaatgaccttccacct
+
+
+Acceptor site predictions for PLP1103042727 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.46     accccatgtcaatcattttagtttgtgggcatcacctatgc
+
+
+Acceptor site predictions for PLP1103040511 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.99     tttccccttcttcttccccaggcttgttagagtgctgtgca
+
+
+Acceptor site predictions for PLP1103045455 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.98     tctctcttctgttccctacagctcaccttcatgattgctgc
+
+
+Acceptor site predictions for PLP1103043366 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.95     tgctttttgtgtcttacttaggtgttctcccatggaatgct
+
+
+Acceptor site predictions for ATP7B52539008 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ATP7B52585423 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ATP7B52542580 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ATP7B52513187 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ATP7B52518245 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ATP7B52531652 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ATP7B52515217 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ATP7B52506805 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ATP7B52520420 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ATP7B52524143 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ATP7B52524408 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ATP7B52511612 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ATP7B52544628 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ATP7B52509729 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ATP7B52516522 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ATP7B52511412 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for TNNT155652554 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for TNNT155658049 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.02     tctgtgcccccatctccagaggaggctgcggaggaggagga
+
+
+Acceptor site predictions for TNNT155652251 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for TNNT155656912 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for TNNT155645255 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for TNNT155644161 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for TNNT155648471 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for TNNT155658494 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for TNNT155653225 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for TNNT155660529 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for TNNT155649329 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for TNNT155658376 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SGCE94232602 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SGCE94257514 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SGCE94228087 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SGCE94259031 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SGCE94248070 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SGCE94229958 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SGCE94214536 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SGCE94218001 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SGCE94285302 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SGCE94252637 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PLA2G638516766 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PLA2G638507502 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PLA2G638541445 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PLA2G638528838 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PLA2G638522378 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PLA2G638508511 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PLA2G638525461 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PLA2G638509494 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PLA2G638565225 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PLA2G638511534 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PLA2G638519102 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PLA2G638539112 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PLA2G638512082 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PLA2G638535989 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PLA2G638530995 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for CAPN342702129 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.87     cactcttctccatccccccagacaaggacctgaagacacac
+
+
+Acceptor site predictions for CAPN342701985 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.99     ctcctctcccttcctcctcaggacatggagatctgtgcaga
+
+
+Acceptor site predictions for CAPN342703945 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.16     tgatcttgggacttctttcagtggctgcagctcaccatgta
+
+
+Acceptor site predictions for CAPN342701501 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.85     ttttcctttgtgcctccacagccacagcctggcagctctga
+
+
+Acceptor site predictions for CAPN342702626 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.96     gccctgacctccctcctccagacagatggctctggaaagct
+
+
+Acceptor site predictions for CAPN342703485 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.79     ggcctgtgcattctttcacaggagcttttcatgcatttgac
+
+
+Acceptor site predictions for CAPN342703082 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.92     ctaacatggtcccctccacaggattccacctcaacaaccag
+
+
+Acceptor site predictions for CAPN342702786 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.23     cctcaaattttctattgccagaaaattttcaaacactatga
+
+
+Acceptor site predictions for BRCA141209069 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141222945 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.54     cttctcccattcctttcagagggaaccccttacctggaatc
+
+
+Acceptor site predictions for BRCA141251792 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141199660 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141256885 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141234421 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141256139 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141215891 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141242961 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141249261 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141276034 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141226348 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141247863 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141196312 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141258473 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141203080 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141219625 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for BRCA141215350 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PDHA119377607 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.60     acactgttacctaatttttaggaaattgatgtggaagtgag
+
+
+Acceptor site predictions for PDHA119367430 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.94     tgtatatttttgtcttttaaggcaagcagagtgctggtagc
+
+
+Acceptor site predictions for PDHA119371200 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.86     tgtatgttctgccatttccaggacgaaaaggaggttgtgct
+
+
+Acceptor site predictions for PDHA119373467 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.92     ccttttcgtaactacttccagggccagatattcgaagctta
+
+
+Acceptor site predictions for PDHA119377034 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.99     actacttttccctccccatagttaccgtacacgagaagaaa
+
+
+Acceptor site predictions for PDHA119362011 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PDHA119373804 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.96     ccctcccctgtttattaccaggtggatggaatggatatcct
+
+
+Acceptor site predictions for PDHA119375770 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.86     tgcctaccggttctgttttaggggcccatcctgatggagct
+
+
+Acceptor site predictions for PDHA119368055 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.97     aactaccttattccatttcagaaatgtgaccttcaccggct
+
+
+Acceptor site predictions for DYSF71795081 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.09     ctgtccttctctggtacccagtatccgatggagaaggtgcc
+
+
+Acceptor site predictions for DYSF71797359 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.98     cctgttcggttttgtccttagaacggggagaaggtgcttcc
+
+
+Acceptor site predictions for DYSF71791188 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.44     cgaccaccaccctctgttcagccccagaacagcctgccgga
+
+
+Acceptor site predictions for DYSF71829906 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.02     catcccatggctgtgggccaggtgcaggagacatcaaggat
+
+
+Acceptor site predictions for DYSF71795302 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.67     tcattcttcctggccctccagtatgagaacgagactaagtt
+
+
+Acceptor site predictions for DYSF71883292 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.24     tctaatccccatgtgtggcaggtctatgacacacagctgga
+
+
+Acceptor site predictions for DYSF71886008 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.99     ttaacccttccttcttttcagggcctcttcaaaatttatcc
+
+
+Acceptor site predictions for DYSF71828629 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.97     gctctcttttcttcactccagccggccatccaccatattcc
+
+
+Acceptor site predictions for DYSF71901327 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.89     tctgttcctcttccgggtcaggatgccttctggaggctgga
+
+
+Acceptor site predictions for DYSF71838375 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.51     tctacctgctgtccactgcagtctgaggacacagacctgcc
+
+
+Acceptor site predictions for DYSF71913584 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.99     ctgtctcctccctccctccagaactatgctgccatgaagct
+
+
+Acceptor site predictions for DYSF71742753 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.98     tttcctccttctggctttcagatcagggtccaggtgatcga
+
+
+Acceptor site predictions for DYSF71825694 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.14     ccccctctccggcccatgcagatccctatgccatcgtctcc
+
+
+Acceptor site predictions for DYSF71708013 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.97     tcccttttgtgtctcttgtaggggtgaagaagagaaccaaa
+
+
+Acceptor site predictions for DYSF71817341 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.25     ctgttttttcccttggtgaagatgggaaccgctaccatcta
+
+
+Acceptor site predictions for DYSF71762151 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.96     tcccctccctgtgtcttctagctgtgcagcaagatcttgga
+
+
+Acceptor site predictions for DYSF71755428 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.90     ctggtgtgtccctcttcccagtggacgatgccgtgatggac
+
+
+Acceptor site predictions for DYSF71780141 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.86     tggtctactctctgctctcagaagtaccttaggaggcgcaa
+
+
+Acceptor site predictions for DYSF71747308 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.89     gtctcctctcattgattgcagatggacgtgggcaccattta
+
+
+Acceptor site predictions for DYSF71766287 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.98     ctctctgctcccttgctctagggaccgcctgactcacaatg
+
+
+Acceptor site predictions for DYSF71887690 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.97     gtgttttgtctcctcctccagtgtgatccttacatcaagat
+
+
+Acceptor site predictions for DYSF71738937 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.97     cccacgtctcatctcttccaggcctcgctggtcctgcaggt
+
+
+Acceptor site predictions for DYSF71892292 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.95     tgtcttgtgcttgctcctcagctctggaccgaaccagtggc
+
+
+Acceptor site predictions for DYSF71762398 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.96     acgcctctattccttcctcagtttccctccatgtgcgaaaa
+
+
+Acceptor site predictions for DYSF71740846 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.95     attagggccctctcctcttagacacaggaggagaggaagac
+
+
+Acceptor site predictions for DYSF71778737 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.64     gtgacctgacctccctggcagggggaaggtgtggcttatcg
+
+
+Acceptor site predictions for DYSF71709009 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.99     ccttttctctttttcttccagggatttgaatgggacctcaa
+
+
+Acceptor site predictions for DYSF71780937 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.86     aggcccgtctctccattccagggtgccactactactaccta
+
+
+Acceptor site predictions for DYSF71778171 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.56     attgccacttgtgtctcccagtggatgactacctgggcttc
+
+
+Acceptor site predictions for DYSF71816723 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.83     taaccagcttcgtgtctccagggcggcgtgatggatgacaa
+
+
+Acceptor site predictions for DYSF71839771 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.96     cgttcttcctcctccacccagatgctgcccagggaggagct
+
+
+Acceptor site predictions for DYSF71894506 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.33     tttgtcttctctctggggcagaggctggcaggatcccaaac
+
+
+Acceptor site predictions for DYSF71801328 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.89     tctgccccttctcttgtgcagcacaggcaggcggaggcgga
+
+
+Acceptor site predictions for DYSF71783095 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.98     ccttgcctgcccattccacaggaagctggcctggagcaggt
+
+
+Acceptor site predictions for DYSF71797729 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.89     gaccggttccccctcccccaggctgggagtatagcatcacc
+
+
+Acceptor site predictions for DYSF71891398 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.87     gggaatctgcccctcctgcaggatgttcgagctgacctgca
+
+
+Acceptor site predictions for DYSF71730344 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.99     ttgacttctctctcctctcaggttcctgggggaagccaagg
+
+
+Acceptor site predictions for DYSF71747919 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.85     agaggatgttgtctctcttagggcacgcctatctcaggaag
+
+
+Acceptor site predictions for DYSF71788882 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.90     ccatctgtccgtccctcacagccagcctctgggtgacatcc
+
+
+Acceptor site predictions for DYSF71871095 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.89     tctttctttctacccactcaggaggaagagttcatcgattg
+
+
+Acceptor site predictions for DYSF71895884 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.76     gaacggaccctgtctccgcaggggaagctgcagatgtgggt
+
+
+Acceptor site predictions for DYSF71838595 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.95     ctcctcattctgtgtgcttagatcctggcatggggcctgcg
+
+
+Acceptor site predictions for DYSF71796950 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.53     ctgaccagccctcctccacagtctgctccatgacatggacg
+
+
+Acceptor site predictions for DYSF71744119 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.99     ttccatgatctttctctgcaggtggtagactctcgttctct
+
+
+Acceptor site predictions for DYSF71827832 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.50     gtctctctacgcttggtctagggtgcagacgagtttatggg
+
+
+Acceptor site predictions for DYSF71896242 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.91     tagagtgatacctttccccaggtttttcctgcgttgtatta
+
+
+Acceptor site predictions for DYSF71743310 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.05     ctctttgctctgaaccaacagactcttttcttcaacttgtt
+
+
+Acceptor site predictions for DYSF71896735 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for DYSF71909660 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.49     cctccgggatctcgcttccaggcgccccgacacctccttcc
+
+
+Acceptor site predictions for DYSF71908131 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.94     aagtgctctctgtcccctcagggcaagctggaaatgacctt
+
+
+Acceptor site predictions for DYSF71906187 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.86     aaaactacctctctgttgcaggctccctgcagctcgatctc
+
+
+Acceptor site predictions for DYSF71840464 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.78     ggatggctccctcccctgcagacgatgtgagcctactcagt
+
+
+Acceptor site predictions for DYSF71753350 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.99     cgtatttggttttctttgtagctggagagaaaagacccctc
+
+
+Acceptor site predictions for SLC25A22792142 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SLC25A22794458 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SLC25A22792304 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SLC25A22794776 :
+
+Start   End    Score     Intron               Exon
+
+Predictions for the reverse strand:
+
+Start   End    Score     Intron               Exon
+   41     1     0.02     ATTGATGAGCTTGGCTGGCAGGCTGTGTGGACAGGGGTGTC
+
+
+Acceptor site predictions for SLC25A22794987 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SLC25A22793529 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SLC25A22790475 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SLC25A22792553 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SLC25A22792870 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ALDH7A1125885621 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ALDH7A1125929043 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ALDH7A1125894932 :
+
+Start   End    Score     Intron               Exon
+
+Predictions for the reverse strand:
+
+Start   End    Score     Intron               Exon
+   41     1     0.10     CTGAGGTCTGCATCTTCAAAGGCTTAGGAAAGCACAAACAC
+
+
+Acceptor site predictions for ALDH7A1125930699 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ALDH7A1125896775 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ALDH7A1125928356 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ALDH7A1125918543 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ALDH7A1125882016 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ALDH7A1125912771 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ALDH7A1125903951 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ALDH7A1125877533 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ALDH7A1125885888 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ALDH7A1125919624 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ALDH7A1125887713 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ALDH7A1125911112 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for ALDH7A1125906474 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for APTX32985969 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for APTX32989757 :
+
+Start   End    Score     Intron               Exon
+    1    41     0.14     cttttgttttgtcccttagagtgatgatgcgggtgtgctgg
+
+
+Acceptor site predictions for APTX32984629 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for APTX32974456 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192146590 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192151416 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192119028 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192131204 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192120586 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192147455 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192138643 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192136308 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192123801 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192122267 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192123607 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192143162 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192157621 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192140258 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192135562 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192130821 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192132355 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192129018 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192126027 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192118607 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for PEX192140894 :
+
+Start   End    Score     Intron               Exon
+
+Predictions for the reverse strand:
+
+Start   End    Score     Intron               Exon
+   41     1     0.99     CTTCTTCACTTATGTCTTTAGGCTGCCAGAAAAAGGAATAG
+
+
+Acceptor site predictions for PEX192116337 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166903280 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166901553 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166872117 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166868619 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166850656 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166845670 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166856233 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166866229 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166911148 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166904137 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166852523 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166894286 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166897741 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166905396 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166915080 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166908229 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166892558 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166909362 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166858982 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166898802 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166895933 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166912921 :
+
+Start   End    Score     Intron               Exon
+
+
+Acceptor site predictions for SCN1A166870254 :
+
+Start   End    Score     Intron               Exon
+
+Predictions for the reverse strand:
+
+Start   End    Score     Intron               Exon
+   41     1     0.23     CACTTGAATCTTTGTACACAGCCTGCAGAAAGTGTTGAAAT
+
+
+Acceptor site predictions for SCN1A166854548 :
+
+Start   End    Score     Intron               Exon
