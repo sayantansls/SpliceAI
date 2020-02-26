@@ -88,36 +88,43 @@ Start   End    Score     Exon   Intron
 Donor site predictions for ATP7B52539169 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     tattgaggtaagtaa
 
 
 Donor site predictions for ATP7B52585630 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.84     tcggaaagtgagttt
 
 
 Donor site predictions for ATP7B52542743 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.97     gctgacagtaagtac
 
 
 Donor site predictions for ATP7B52513329 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.95     cacccaggtacagcc
 
 
 Donor site predictions for ATP7B52518427 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     taaagaggtacgtgg
 
 
 Donor site predictions for ATP7B52531743 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     tcatcaggtgagtta
 
 
 Donor site predictions for ATP7B52515360 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.18     attgacggtatcttc
 
 
 Donor site predictions for ATP7B52509165 :
@@ -128,66 +135,79 @@ Start   End    Score     Exon   Intron
 Donor site predictions for ATP7B52520614 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.93     gcacaaggtcagcct
 
 
 Donor site predictions for ATP7B52524297 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.89     gtcaaaggtaatgaa
 
 
 Donor site predictions for ATP7B52524535 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.91     atcacaggtgagatg
 
 
 Donor site predictions for ATP7B52511815 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.31     tatcagagtgagcgt
 
 
 Donor site predictions for ATP7B52544885 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.97     gaagctggtaagaga
 
 
 Donor site predictions for ATP7B52509831 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     tcaagtggtgagtcc
 
 
 Donor site predictions for ATP7B52516690 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.69     gaaaaaggtattgct
 
 
 Donor site predictions for ATP7B52511529 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.94     gcagcaggtaggcag
 
 
 Donor site predictions for TNNT155652670 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.09     gcgcattgtgagccg
 
 
 Donor site predictions for TNNT155658075 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.88     gaggaaggtgaggtc
 
 
 Donor site predictions for TNNT155652328 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.08     gctggcggtgggtgc
 
 
 Donor site predictions for TNNT155656933 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     aaccaaggtgagatc
 
 
 Donor site predictions for TNNT155645295 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.71     agaagttgtgagtgt
 
 
 Donor site predictions for TNNT155644328 :
@@ -198,62 +218,73 @@ Start   End    Score     Exon   Intron
 Donor site predictions for TNNT155648580 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.96     agctccggtaggtgc
 
 
 Donor site predictions for TNNT155658536 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.87     atgaggagtgagtgc
 
 
 Donor site predictions for TNNT155653288 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.97     cttcgatgtaagtga
 
 
 Donor site predictions for TNNT155660606 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     agcctaggtaagggg
 
 
 Donor site predictions for TNNT155649442 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     ggtcaaggtgagtca
 
 
 Donor site predictions for TNNT155658389 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     ccggaaggtgagtag
 
 
 Donor site predictions for SGCE94232764 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     ttcattggtaagttt
 
 
 Donor site predictions for SGCE94257671 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.94     cattgaggtaattta
 
 
 Donor site predictions for SGCE94228275 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     cgcagcagtaagtgt
 
 
 Donor site predictions for SGCE94259153 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.96     aaacctggtatgttc
 
 
 Donor site predictions for SGCE94248268 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     aggaggggtaagcag
 
 
 Donor site predictions for SGCE94230169 :
 
 Start   End    Score     Exon   Intron
-    1    15     0.02     ggaaggcgtgtgagt
+    1    15     0.93     aaggcgtgtgagtac
 
 
 Donor site predictions for SGCE94214827 :
@@ -264,21 +295,25 @@ Start   End    Score     Exon   Intron
 Donor site predictions for SGCE94218044 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     actacaggtgagtgc
 
 
 Donor site predictions for SGCE94285521 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.95     ctgacaggttagtgg
 
 
 Donor site predictions for SGCE94252709 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     gcagaaggtaggtat
 
 
 Donor site predictions for PLA2G638516916 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     aacccaagtaagccc
 
 
 Donor site predictions for PLA2G638508312 :
@@ -289,66 +324,79 @@ Start   End    Score     Exon   Intron
 Donor site predictions for PLA2G638541660 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     tcatcaggtgagcaa
 
 
 Donor site predictions for PLA2G638529020 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.88     catgtcggtgagccc
 
 
 Donor site predictions for PLA2G638522456 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     agcggacgtaagtgg
 
 
 Donor site predictions for PLA2G638508584 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     acttcaggtgagggc
 
 
 Donor site predictions for PLA2G638525569 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.92     ggcagacgtatgtgc
 
 
 Donor site predictions for PLA2G638509661 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.58     ggactgtgtgagtgt
 
 
 Donor site predictions for PLA2G638565478 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.51     gattccggtgggtga
 
 
 Donor site predictions for PLA2G638511688 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     ccgcaaggtgagtgc
 
 
 Donor site predictions for PLA2G638519265 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.35     ctgcacagtgagggc
 
 
 Donor site predictions for PLA2G638539295 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     gctgcaggtgagcag
 
 
 Donor site predictions for PLA2G638512218 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.03     ccctcaggtttaaac
 
 
 Donor site predictions for PLA2G638536176 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     agaaggggtaagacc
 
 
 Donor site predictions for PLA2G638531091 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     cgcagaggtgagtgg
 
 
 Donor site predictions for CAPN342702193 :
@@ -400,66 +448,79 @@ Start   End    Score     Exon   Intron
 Donor site predictions for BRCA141209152 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.93     cagaaaggtaaagct
 
 
 Donor site predictions for BRCA141223255 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.66     agaatttgtgagtgt
 
 
 Donor site predictions for BRCA141251897 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.93     gaattgggtaagggt
 
 
 Donor site predictions for BRCA141199720 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     ttccatggtaaggtg
 
 
 Donor site predictions for BRCA141256973 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.97     ttggagtgtaagtgt
 
 
 Donor site predictions for BRCA141234592 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     gaaaaaggtgtgtat
 
 
 Donor site predictions for BRCA141256278 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.39     ttccttggtaaaacc
 
 
 Donor site predictions for BRCA141215968 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.95     tatttctgtaagtat
 
 
 Donor site predictions for BRCA141243049 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.95     cactcaggtaaaaag
 
 
 Donor site predictions for BRCA141249306 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     attgcaggtgagtca
 
 
 Donor site predictions for BRCA141276132 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     ccatctggtaagtca
 
 
 Donor site predictions for BRCA141226538 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.44     gatctaggtaatatt
 
 
 Donor site predictions for BRCA141247939 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.89     aaaaagggtaatggc
 
 
 Donor site predictions for BRCA141197819 :
@@ -470,21 +531,25 @@ Start   End    Score     Exon   Intron
 Donor site predictions for BRCA141258550 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.92     ccaaaaggtatataa
 
 
 Donor site predictions for BRCA141203134 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     cccacaggtaagagc
 
 
 Donor site predictions for BRCA141219712 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.92     aaaacaggtatacca
 
 
 Donor site predictions for BRCA141215390 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     gaatgaggtaagtac
 
 
 Donor site predictions for PDHA119379825 :
@@ -860,31 +925,37 @@ Start   End    Score     Exon   Intron
 Donor site predictions for SLC25A22792217 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.59     gtgccaggtggggag
 
 
 Donor site predictions for SLC25A22794513 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.68     taccggggtgaggtt
 
 
 Donor site predictions for SLC25A22792458 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.53     tgtgatggtcagtgc
 
 
 Donor site predictions for SLC25A22794901 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.87     cgagcatgtgagtgt
 
 
 Donor site predictions for SLC25A22795169 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.82     agatcaggtcagact
 
 
 Donor site predictions for SLC25A22793619 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.57     aggacgggtgagggt
 
 
 Donor site predictions for SLC25A22792068 :
@@ -895,61 +966,73 @@ Start   End    Score     Exon   Intron
 Donor site predictions for SLC25A22792727 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.94     tgctcaggtaggagg
 
 
 Donor site predictions for SLC25A22792988 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.79     cgcattggtgagggc
 
 
 Donor site predictions for ALDH7A1125885694 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.94     gcctttggtacgtag
 
 
 Donor site predictions for ALDH7A1125929096 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     ccgacaggtaagagt
 
 
 Donor site predictions for ALDH7A1125895026 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     gcgactggtgagtat
 
 
 Donor site predictions for ALDH7A1125931082 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.93     gggagaggtacgcgg
 
 
 Donor site predictions for ALDH7A1125896816 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     attattggtaaggct
 
 
 Donor site predictions for ALDH7A1125928421 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     ggcagatgtaagtat
 
 
 Donor site predictions for ALDH7A1125918666 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.98     tctgaaagtaagcaa
 
 
 Donor site predictions for ALDH7A1125882091 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     ctacttggtaagaaa
 
 
 Donor site predictions for ALDH7A1125912903 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     gcctctggtaagacc
 
 
 Donor site predictions for ALDH7A1125904048 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     aggtttggtaagtgt
 
 
 Donor site predictions for ALDH7A1125880711 :
@@ -960,91 +1043,109 @@ Start   End    Score     Exon   Intron
 Donor site predictions for ALDH7A1125885985 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.11     ggcttgggtacaact
 
 
 Donor site predictions for ALDH7A1125919704 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.19     aagcttggtaaagta
 
 
 Donor site predictions for ALDH7A1125887829 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.98     attcaaggtaaaaat
 
 
 Donor site predictions for ALDH7A1125911156 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     tcacaaagtaagtac
 
 
 Donor site predictions for ALDH7A1125906551 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.84     atattgggtaggtta
 
 
 Donor site predictions for APTX32986028 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.83     aatgcaggtcagaat
 
 
 Donor site predictions for APTX32989893 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.96     cagcaaggtaactgg
 
 
 Donor site predictions for APTX32984855 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     gtatgaggtaagcca
 
 
 Donor site predictions for APTX32974559 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     tcacaaggtaaacag
 
 
 Donor site predictions for PEX192147356 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.95     agtctgggttagtat
 
 
 Donor site predictions for PEX192151559 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     gggacaggtaagcac
 
 
 Donor site predictions for PEX192119225 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.05     aagtggagtatggct
 
 
 Donor site predictions for PEX192131393 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.83     agagaaagtatgttt
 
 
 Donor site predictions for PEX192120816 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.04     tgatttggtatcttg
 
 
 Donor site predictions for PEX192147569 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.94     caaattggtaggtgc
 
 
 Donor site predictions for PEX192138725 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     ctttggggtaagaag
 
 
 Donor site predictions for PEX192136440 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     aggaaaggtaagtgg
 
 
 Donor site predictions for PEX192123943 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.87     ttacagggtaataat
 
 
 Donor site predictions for PEX192122443 :
@@ -1055,56 +1156,67 @@ Start   End    Score     Exon   Intron
 Donor site predictions for PEX192123710 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.58     tgatcaggtgacaat
 
 
 Donor site predictions for PEX192143281 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.55     gaatttagtgagttc
 
 
 Donor site predictions for PEX192157845 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.91     gctgcaggtaacctg
 
 
 Donor site predictions for PEX192140361 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.17     aatacaagtaatagc
 
 
 Donor site predictions for PEX192135658 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.96     ttacgaggtatgagt
 
 
 Donor site predictions for PEX192130987 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     tgccaaggtatgttt
 
 
 Donor site predictions for PEX192132509 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.93     taatcaggtaataca
 
 
 Donor site predictions for PEX192129152 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     tgtcaaggtatgttg
 
 
 Donor site predictions for PEX192126091 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.55     ttattaggttggtag
 
 
 Donor site predictions for PEX192118737 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.91     ctgagctgtaagtaa
 
 
 Donor site predictions for PEX192141017 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     aaagatggtgagtac
 
 
 Donor site predictions for PEX192116855 :
@@ -1115,26 +1227,31 @@ Start   End    Score     Exon   Intron
 Donor site predictions for SCN1A166903486 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.96     agctcaggtaaagct
 
 
 Donor site predictions for SCN1A166901837 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     acaccaggtatggca
 
 
 Donor site predictions for SCN1A166872237 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.98     actgaaggtaaagaa
 
 
 Donor site predictions for SCN1A166868792 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.59     tgttgatgtaggtat
 
 
 Donor site predictions for SCN1A166850926 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     attgtaggtaagaaa
 
 
 Donor site predictions for SCN1A166848932 :
@@ -1145,41 +1262,49 @@ Start   End    Score     Exon   Intron
 Donor site predictions for SCN1A166856286 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     cagaaatgtaagtat
 
 
 Donor site predictions for SCN1A166866351 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     gatgagggtaagaaa
 
 
 Donor site predictions for SCN1A166911276 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     catttgcgtaagtgc
 
 
 Donor site predictions for SCN1A166904278 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     tcaactggtgagaac
 
 
 Donor site predictions for SCN1A166852627 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.71     accaggagtaagaag
 
 
 Donor site predictions for SCN1A166894642 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     cctagtggtatgtac
 
 
 Donor site predictions for SCN1A166897979 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     aaacttggtaagcat
 
 
 Donor site predictions for SCN1A166905459 :
 
 Start   End    Score     Exon   Intron
+    1    15     1.00     atgcagggtaagtca
 
 
 Donor site predictions for SCN1A166915198 :
@@ -1190,41 +1315,49 @@ Start   End    Score     Exon   Intron
 Donor site predictions for SCN1A166908498 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.98     gattcaagtaagaat
 
 
 Donor site predictions for SCN1A166893040 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     caaagaggtaagatt
 
 
 Donor site predictions for SCN1A166909453 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     attccaggtgagagc
 
 
 Donor site predictions for SCN1A166859263 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.95     tcaagttgtaagtga
 
 
 Donor site predictions for SCN1A166898934 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.55     gtagaaggttggtaa
 
 
 Donor site predictions for SCN1A166896106 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.28     tcgattggtaaaaaa
 
 
 Donor site predictions for SCN1A166913010 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.99     atgtagagtaagttc
 
 
 Donor site predictions for SCN1A166870408 :
 
 Start   End    Score     Exon   Intron
+    1    15     0.97     tgctctggtgagtga
 
 
 Donor site predictions for SCN1A166854685 :
