@@ -16,7 +16,7 @@ from __future__ import print_function
 import time as tm
 import copy
 import re
-import utils
+import src.common.utils
 import twobitreader
 
 sep = '\t'
@@ -132,7 +132,7 @@ gene_strand_map = dict()
 
 
 def create_gene_strand_map(genes_file):
-    for gene in utils.records_iterator(genes_file):
+    for gene in src.common.utils.records_iterator(genes_file):
         gene_strand_map[gene['Symbol']] = gene['Strand']
 
 
@@ -294,7 +294,7 @@ The headers in the "SpliceVariants.tsv" file are as follows:
 
 
 def create_splice_matrix(inputfile, outfile):
-    for variant in utils.records_iterator(inputfile):
+    for variant in src.common.utils.records_iterator(inputfile):
         ENTRY = copy.deepcopy(ENTRY_T)
 
         ENTRY['caseID'] = variant['Case ID']
