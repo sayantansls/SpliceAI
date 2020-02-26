@@ -1,4 +1,3 @@
-
 """
 @author - sayantan
 The purpose of this code is as follows:
@@ -143,33 +142,36 @@ def create_mes_ranges(position, strand):
     # Acceptor splice site = -19 to +3
     # Build handling for negative strand?????
     if strand == '+':
-    	donor_splice = {'start': (position - 3), 'end': (position + 5)}
-    	acceptor_splice = {'start': (position - 19), 'end': (position + 3)}
+        donor_splice = {'start': (position - 3), 'end': (position + 5)}
+        acceptor_splice = {'start': (position - 19), 'end': (position + 3)}
     else:
-    	donor_splice = {'start': (position - 5), 'end': (position + 3)}
-    	acceptor_splice = {'start': (position - 3), 'end': (position + 19)}
+        donor_splice = {'start': (position - 5), 'end': (position + 3)}
+        acceptor_splice = {'start': (position - 3), 'end': (position + 19)}
 
     return donor_splice, acceptor_splice
 
-def create_mes_donor_range(position, strand):
-  if strand == '+':
-    donor_splice = {'start': (position - 2), 'end': (position + 6)}
-  elif strand == '-':
-    donor_splice = {'start': (position - 6), 'end': (position + 2)}
-  else:
-    print(position,"Wrong strand sense")
 
-  return donor_splice
+def create_mes_donor_range(position, strand):
+    if strand == '+':
+        donor_splice = {'start': (position - 2), 'end': (position + 6)}
+    elif strand == '-':
+        donor_splice = {'start': (position - 6), 'end': (position + 2)}
+    else:
+        print(position, "Wrong strand sense")
+
+    return donor_splice
+
 
 def create_mes_acceptor_range(position, strand):
-  if strand == '+':
-    acceptor_splice = {'start': (position - 20), 'end': (position + 2)}
-  elif strand == '-':
-    acceptor_splice = {'start': (position - 2), 'end': (position + 20)}
-  else:
-    print(position, "Wrong strand sense")
+    if strand == '+':
+        acceptor_splice = {'start': (position - 20), 'end': (position + 2)}
+    elif strand == '-':
+        acceptor_splice = {'start': (position - 2), 'end': (position + 20)}
+    else:
+        print(position, "Wrong strand sense")
 
-  return acceptor_splice
+    return acceptor_splice
+
 
 def create_hsf_ranges(position):
     # Human Splicing Finder (HSF)
@@ -189,13 +191,22 @@ def create_nnsplice_ranges(position):
     acceptor_splice = {'start': (position - 20), 'end': (position + 20)}
     return donor_splice, acceptor_splice
 
-def create_nnsplice_donor_range(position):
-  donor_splice = {'start': (position - 6), 'end': (position + 8)}
-  return donor_splice
 
-def create_nnsplice_acceptor_range(position):
-  acceptor_splice = {'start': (position - 21), 'end': (position + 19)}
-  return acceptor_splice
+def create_nnsplice_donor_range(position, strand):
+    if strand == '+':
+        donor_splice = {'start': (position - 6), 'end': (position + 8)}
+    else:
+        donor_splice = {'start': (position - 8), 'end': (position + 6)}
+    return donor_splice
+
+
+def create_nnsplice_acceptor_range(position, strand):
+    if strand == '+':
+        acceptor_splice = {'start': (position - 21), 'end': (position + 19)}
+    else:
+        acceptor_splice = {'start': (position - 19), 'end': (position + 21)}
+    return acceptor_splice
+
 
 def create_spliceport_ranges(position):
     # Spliceport
@@ -214,12 +225,14 @@ def create_assp_ranges(position):
     acceptor_splice = {'start': (position - 70), 'end': (position + 70)}
     return donor_splice, acceptor_splice
 
+
 def create_assp_hsf_range(position):
-  splice_range = {'start': (position - 70), 'end': (position + 70)}
-  return splice_range
-  
+    splice_range = {'start': (position - 70), 'end': (position + 70)}
+    return splice_range
+
+
 def create_reverse_complementary_sequence(sequence):
-    complementary = {'A':'T', 'T':'A', 'G':'C', 'C':'G', 'a':'t', 't':'a', 'g':'c', 'c':'g'}
+    complementary = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G', 'a': 't', 't': 'a', 'g': 'c', 'c': 'g'}
     c_sequence = str()
     for base in sequence:
         c_sequence += complementary[base]
@@ -228,13 +241,14 @@ def create_reverse_complementary_sequence(sequence):
 
 
 def get_original_sequence(predictor, chrom):
-  sequence = genome[chrom][predictor['start']-1:predictor['end']]
+    sequence = genome[chrom][predictor['start'] - 1:predictor['end']]
 
-  return sequence
+    return sequence
+
 
 def get_sequence(predictor, base, position, chrom):
     sequence = genome[chrom][predictor['start'] - 1:position - 1] + base + genome[chrom][
-                                                                                   position:predictor['end']]
+                                                                           position:predictor['end']]
     return sequence
 
 
@@ -278,8 +292,8 @@ The headers in the "SpliceVariants.tsv" file are as follows:
 36 -- Literature Summary
 """
 
-def create_splice_matrix(inputfile, outfile):
 
+def create_splice_matrix(inputfile, outfile):
     for variant in utils.records_iterator(inputfile):
         ENTRY = copy.deepcopy(ENTRY_T)
 

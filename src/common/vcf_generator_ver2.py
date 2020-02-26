@@ -170,7 +170,7 @@ def main(input_file, output_file, genome_file, vcf_template, genesfile):
     segregate_variants()
 
     print("#Substitution variants:", len(subs))
-    print("#INDEL variants": len(others))
+    print("#INDEL variants:", len(others))
 
     create_substitution_entries(output)
     create_non_substitution_entries(output)
