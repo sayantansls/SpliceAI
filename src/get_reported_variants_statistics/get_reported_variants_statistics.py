@@ -3,7 +3,6 @@
 The purpose of this code is as follows:
 1 -- This code consumes two files - positive.tsv and negative.tsv and gets some statistics
 2 -- It obtains the splice variants from the positive.tsv file and displays splice statistics
-3 -- It creates pie charts and bar charts to display the data
 """
 
 from __future__ import print_function
@@ -12,7 +11,6 @@ import copy
 import utils
 import re
 import os
-import matplotlib.pyplot as plt
 
 """
 The headers in the positive.tsv file are as follows:
@@ -201,6 +199,8 @@ def create_reported_cases_statistics(inputfile):
 
             if is_test_cohort(case['Test'].strip()) == 1 or is_genelist_cohort(case['ReportWiseGeneListInfo'].strip()) == 1:
                 clinical_exome_cohort_cases += 1
+                #if filename == 'negative.tsv':
+                 #   print(case['CaseID'] + "\t" + case['UK1'] + "\t" + case['UK2'] + "\t" + case['Panel'] + "\t" + case['Test'] + "\t" + case['ClinicalManifestations'])
 
                 if filename == 'positive.tsv':
                     if is_pathogenic(case['VariantLabelReason']):
@@ -241,17 +241,6 @@ def create_printable_data(file, cases, clinical_exome_cases, clinical_exome_path
         print("Variant Label Stats:", variant_label_stats)
 
 
-def create_pie_charts(clinical_exome_cases, cohort_cases):
-    labels = ['Neurodevelopmental Cohorts', 'Others']
-    sizes = [cohort_cases, (clinical_exome_cases - cohort_cases)]
-    colors = ['gold', 'lightskyblue']
-    patches, texts = plt.pie(sizes, colors=colors, shadow=True, startangle=90)
-    plt.legend(patches, labels, loc="best")
-    plt.axis('equal')
-    plt.tight_layout()
-    plt.show()
-
-
 def main(positive_file, negative_file, test_file, genelist_file):
     print("Start of code:", tm.ctime(tm.time()))
 
@@ -274,9 +263,6 @@ def main(positive_file, negative_file, test_file, genelist_file):
     create_printable_data(negative_file, negative_cases, negative_clinical_exome_cases, negative_clinical_exome_pathogenic,
                           negative_cohort_cases, negative_cohort_case_pathogenic, negative_gender_stats,
                           negative_age_stats, negative_variant_label_stats)
-
-    #create_pie_charts(positive_clinical_exome_cases, positive_cohort_cases)
-    #create_pie_charts(negative_clinical_exome_cases, negative_cohort_cases)
 
     print("End of code:", tm.ctime(tm.time()))
 
