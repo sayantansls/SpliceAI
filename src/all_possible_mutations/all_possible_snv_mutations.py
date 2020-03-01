@@ -9,6 +9,7 @@ import time as tm
 import sys
 import utils
 import copy
+import twobitreader
 
 """
 The headers in the strong_exons.tsv and rare_exons.tsv file are as follows:
@@ -18,6 +19,7 @@ The headers in the strong_exons.tsv and rare_exons.tsv file are as follows:
 4 -- Exon_start	
 5 -- Exon_end
 """
+sep = '\t'
 
 HEADERS = ['Gene',
 		   'Chromosome',
@@ -39,11 +41,19 @@ ENTRY_T = {'Gene': '',
 		   'Exon_end_site_present': '',
 		   'Exon_end_site_positions': ''}
 
+def load_genome_sequence():
+	global genome
+	genome = twobitreader.TwoBitFile('/home/sayantan/Desktop/hg19.2bit')
+
+def get_bases(pos1, pos2, chrom):
+	return genome[chrom][pos1-1:pos2]
+
 def processing_entries(inputfile, output):
 	for entry in utils.records_iterator(inputfile):
 		ENTRY = copy.deepcopy(ENTRY_T)
 		ENTRY['Gene'] = entry['Gene']
-		ENTRY['Chromosome'] = entry['Chromosome']
+		chrom = entry['Chromosome']
+		ENTRY['Chromosome'] = chrom
 		strand = entry['Strand']
 		ENTRY['Strand'] = strand
 		exon_start, exon_end = [int(entry['Exon_start']), int(entry['Exon_end'])]
@@ -52,11 +62,24 @@ def processing_entries(inputfile, output):
 		if strand == '+':
 			ENTRY['Exon_start_site_present'] = 'acceptor'
 			ENTRY['Exon_end_site_present'] = 'donor'
+			(start_site_A, start_site_G)  = (exon_start-2, exon_start-1)
+			(end_site_G, end_site_T) = (exon_end+1, exon_end+2)
+			(AG, GT) = (get_bases(start_site_A, start_site_G, chrom), get_bases(end_site_G, end_site_T, chrom)) 
+			ENTRY['Exon_start_site_positions'] = (start_site_A, start_site_G)
+			ENTRY['Exon_end_site_positions'] = (end_site_G, end_site_T)
 		else:
 			ENTRY['Exon_start_site_present'] = 'donor'
 			ENTRY['Exon_end_site_present'] = 'acceptor'
+			(start_site_G, start_site_T) = (exon_start+1, exon_start+2)
+			(end_site_A, end_site_G) = (exon_end-2, exon_end-1)
+			(AG, GT) = (get_bases(end_site_A, end_site_G, chrom), get_bases(start_site_G, start_site_T, chrom))
+			ENTRY['Exon_start_site_positions'] = (start_site_G, start_site_T)
+			ENTRY['Exon_end_site_positions'] = (end_site_A, end_site_G)
 
-
+		print(AG, GT)
+		field_values = [str(ENTRY[i]) for i in HEADERS]
+		output.write(sep.join(field_values))
+		output.write('\n')
 
 def main(strong_exons_inputfile, rare_exons_inputfile, strong_exons_outputfile, rare_exons_outputfile):
 	print("Start of code:", tm.ctime(tm.time()))
@@ -64,9 +87,11 @@ def main(strong_exons_inputfile, rare_exons_inputfile, strong_exons_outputfile, 
 	strong_exons_output = open(strong_exons_outputfile, 'w')
 	rare_exons_output = open(rare_exons_outputfile, 'w')
 
-	strong_exons_output.write(HEADERS)
+	load_genome_sequence()
+
+	strong_exons_output.write(sep.join(HEADERS))
 	strong_exons_output.write('\n')
-	rare_exons_output.write(HEADERS)
+	rare_exons_output.write(sep.join(HEADERS))
 	rare_exons_output.write('\n')
 
 	processing_entries(strong_exons_inputfile, strong_exons_output)
