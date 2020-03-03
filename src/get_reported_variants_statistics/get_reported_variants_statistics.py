@@ -199,8 +199,8 @@ def create_reported_cases_statistics(inputfile):
 
             if is_test_cohort(case['Test'].strip()) == 1 or is_genelist_cohort(case['ReportWiseGeneListInfo'].strip()) == 1:
                 clinical_exome_cohort_cases += 1
-                #if filename == 'negative.tsv':
-                 #   print(case['CaseID'] + "\t" + case['UK1'] + "\t" + case['UK2'] + "\t" + case['Panel'] + "\t" + case['Test'] + "\t" + case['ClinicalManifestations'])
+                if filename == 'negative.tsv':
+                   print(case['CaseID'] + "\t" + case['UK1'] + "\t" + case['UK2'] + "\t" + case['Panel'] + "\t" + case['Test'] + "\t" + case['ClinicalManifestations'] + "\t" + case['ReportWiseGeneListInfo'])
 
                 if filename == 'positive.tsv':
                     if is_pathogenic(case['VariantLabelReason']):

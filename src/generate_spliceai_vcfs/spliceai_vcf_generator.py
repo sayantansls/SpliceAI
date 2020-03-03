@@ -32,11 +32,19 @@ ENTRY_T = {'#CHROM': '',
 
 sep = '\t'
 
-def create_substitution_entries(output):
+def get_all_alt(base):
+	org_bases = ['A', 'T', 'G', 'C']
+	bases = copy.deepcopy(org_bases)
+	if base in bases:
+		bases.remove(base)
+	return ','.join(bases)
+
+
+def create_substitution_entries(output, subs):
 	for variant in subs:
 		ENTRY = copy.deepcopy(ENTRY_T)
 		gene, gHGVS = [variant[0], variant[1]]
-		ref_alt = re.findall(r'[A-Z]', gHGVS)
+		ref_alt = re.findall(r'[A-Za-z]', gHGVS)
 		position = ''.join(re.findall(r'[0-9]+', gHGVS))
 		ref, alt = [ref_alt[0], ref_alt[1]]
 
@@ -44,12 +52,13 @@ def create_substitution_entries(output):
 		ENTRY['POS'] = position
 		ENTRY['REF'] = ref
 		ENTRY['ALT'] = alt
+		ENTRY['ALT'] = get_all_alt(ref.upper())
 
 		field_values = [ENTRY[i] for i in headers]
 		output.write(sep.join(field_values))
 		output.write('\n')
 
-def create_non_substitution_entries(output):
+def create_non_substitution_entries(output, others):
 	for variant in others:
 		ENTRY = copy.deepcopy(ENTRY_T)
 		gene, gHGVS = [variant[0], variant[1]]
@@ -64,7 +73,7 @@ def create_non_substitution_entries(output):
 		ENTRY['POS'] = pos
 		ENTRY['REF'] = ref
 		ENTRY['ALT'] = alt
-
+		
 		field_values = [str(ENTRY[i]) for i in headers]
 		output.write(sep.join(field_values))
 		output.write('\n')
@@ -73,7 +82,7 @@ def main(input_file, output_file, genome_file, input_template, genesfile):
 	print("Start of code:", tm.ctime(tm.time()))
 	
 	vcf_generator_ver2.load_human_genome_sequence(genome_file)
-	vcf_generator_ver2.load_metadata(input_template)
+	metadata = vcf_generator_ver2.load_metadata(input_template)
 
 	output = open(output_file, 'w')
 	for line in metadata:
@@ -83,17 +92,17 @@ def main(input_file, output_file, genome_file, input_template, genesfile):
 	output.write('\n')
 
 	vcf_generator_ver2.create_gene_chromosome_map(genesfile)
-	vcf_generator_ver2.process_input_file(input_file)
+	variants_list = vcf_generator_ver2.process_input_file(input_file)
 
 	print("Total variants in the file:", len(variants_list))
 	
-	vcf_generator_ver2.segregate_variants()
+	(subs, others) = vcf_generator_ver2.segregate_variants()
 	
 	print("#Substitution variants:", len(subs))
 	print("#INDEL variants:", len(others))
 
-	create_substitution_entries(output)
-	create_non_substitution_entries(output)
+	create_substitution_entries(output, subs)
+	create_non_substitution_entries(output, others)
 
 	print("End of code:", tm.ctime(tm.time()))
 

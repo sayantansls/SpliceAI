@@ -17,13 +17,28 @@
 	CEP290	g.88512260C>T
 	PNKP	g.50365794C>A 
 
-#### The following command runs the script and creates the VCF file for the variants in the input TSV file:
+#### The following command runs the script and creates the VCF file for the splice variants in the input TSV file:
 
 	DATA=../../data
 	OUT=../../data/processed_files/
 	PYTHONPATH=../common python spliceai_vcf_generator.py \
 	$DATA/variant_input_data/splice_variants_for_vcf.tsv \
 	$OUT/splice_variants_vcf.vcf \
-	$DATA/human_genome_data/hg19.2bit \
+	~/Desktop/hg19.2bit \
 	$DATA/spliceai_templates/input_template.vcf \
 	$DATA/strandomics_input_data/genes.tsv
+
+#### The following command runs the script and creates VCF file for all possible snv mutations in the strong and rare exons:
+
+DATA=../../data
+OUT=../../data/processed_files/
+PYTHONPATH=../common python spliceai_vcf_generator.py \
+$DATA/
+$
+
+#### Important NOTE:
+Normally, the VCF generated will have REF and ALT values as provided through the genomic HGVS.
+However, if you want all possible mutations (For eg. if REF = 'A', ALT = 'T,G,C') (for substitution entries only), then perform the following:
+1. open the script 'splice_vcf_generator.py'
+2. go to line 54 and comment the line with a '#'
+3. Uncomment line 55 and run the script

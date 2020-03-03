@@ -10,6 +10,7 @@ import sys
 import utils
 import copy
 import twobitreader
+import create_splice_matrices
 
 """
 The headers in the strong_exons.tsv and rare_exons.tsv file are as follows:
@@ -29,7 +30,8 @@ HEADERS = ['Gene',
 		   'Exon_start_site_positions',
 		   'Exon_end',
 		   'Exon_end_site_present',
-		   'Exon_end_site_positions']
+		   'Exon_end_site_positions',
+		   'Comments']
 
 ENTRY_T = {'Gene': '',
 		   'Chromosome': '',
@@ -39,7 +41,8 @@ ENTRY_T = {'Gene': '',
 		   'Exon_start_site_positions': '',
 		   'Exon_end': '',
 		   'Exon_end_site_present': '',
-		   'Exon_end_site_positions': ''}
+		   'Exon_end_site_positions': '',
+		   'Comments': ''}
 
 def load_genome_sequence():
 	global genome
@@ -70,13 +73,22 @@ def processing_entries(inputfile, output):
 		else:
 			ENTRY['Exon_start_site_present'] = 'donor'
 			ENTRY['Exon_end_site_present'] = 'acceptor'
-			(start_site_G, start_site_T) = (exon_start+1, exon_start+2)
-			(end_site_A, end_site_G) = (exon_end-2, exon_end-1)
-			(AG, GT) = (get_bases(end_site_A, end_site_G, chrom), get_bases(start_site_G, start_site_T, chrom))
+			(start_site_G, start_site_T) = (exon_start-2, exon_start-1)
+			(end_site_A, end_site_G) = (exon_end+1, exon_end+2)
+			(AG_tmp, GT_tmp) = (get_bases(end_site_A, end_site_G, chrom), get_bases(start_site_G, start_site_T, chrom))
+			(AG, GT) = (create_splice_matrices.create_reverse_complementary_sequence(AG_tmp), \
+			create_splice_matrices.create_reverse_complementary_sequence(GT_tmp))
 			ENTRY['Exon_start_site_positions'] = (start_site_G, start_site_T)
 			ENTRY['Exon_end_site_positions'] = (end_site_A, end_site_G)
 
-		print(AG, GT)
+		if AG.upper() != 'AG':
+			ENTRY['Comments'] = 'No acceptor splice (AG) site'
+		elif GT.upper() != 'GT':
+			ENTRY['Comments'] = 'No donor splice (GT) site'
+		elif AG.upper() != 'AG' and GT.upper() != 'GT':
+			ENTRY['Comments'] = 'Neither acceptor (AG) nor donor (GT) splice site present'
+
+		#print(strand, AG, GT)
 		field_values = [str(ENTRY[i]) for i in HEADERS]
 		output.write(sep.join(field_values))
 		output.write('\n')
