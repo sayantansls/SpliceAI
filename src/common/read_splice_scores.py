@@ -3,11 +3,22 @@
 This script reads txt files containing the splice scores from the three predictors - MaxEntSxan(MES), 
 SplicePort and NNSplice. It annotates the scores to the sequences file.
 """
-
+from __future__ import print_function
 import time as tm
-import sys
-import os
+import sys, os
+import re, copy
 
+HEADERS = ['Gene_name',
+	       'genomic_HGVS',
+	       'sequence',
+	       'predictor',
+	       'score']
+
+ENTRY_T = {'Gene_name': '',
+	       'genomic_HGVS': '',
+	       'sequence': '',
+	       'predictor': '',
+	       'score': ''}
 """
 The MaxEntScan scores file is as follows:
 > D2HGDH g.242689707A>G
@@ -19,8 +30,25 @@ TCgGTGAGC	MAXENT: 9.10
 > ALS2 g.202590081G>A
 cAGGTAACA	MAXENT: 8.88	
 """
-def read_maxentscan_scores(inputfile):
+def read_maxentscan_scores(file):
+	for line in file.readlines():
+		ENTRY = copy.deepcopy(ENTRY_T)
+		gene, gHGVS, seq, score = ['','','','']
+		if line.startswith(">"):
+			gene_gHGVS = line.replace("> ", "")
+			gene, gHGVS = gene_gHGVS.split()
+		else:
+			seq_score = line.replace("MAXENT:","")
+			seq, score = seq_score.split()
+			
+		ENTRY['Gene_name'] = gene
+		ENTRY['genomic_HGVS'] = gHGVS
+		ENTRY['sequence'] = seq
+		ENTRY['predictor'] = 'MaxEntScan'
+		ENTRY['score'] = score
 
+		field_values = [ENTRY[i] for i in HEADERS]
+		print(field_values)
 
 """
 The NNsplice scores file is as follows:
@@ -40,7 +68,9 @@ Donor site predictions for LAMA2 :
 Start   End    Score     Exon   Intron
     1    15     0.99     ttgtaaggtgagtga
 """
-def read_nnsplice_scores(inputfile):
+def read_nnsplice_scores(file):
+	for line in file.readlines():
+		print(line)
 
 
 """
@@ -57,19 +87,23 @@ Sequence: A
   100|Alt. isoform/cryptic acceptor|tgtctgaaagCTGGTTTGGA|3.503|0.300|0.803|0.191|0.763
 
 """
-def read_assp_scores(inputfile):
+def read_assp_scores(file):
+	for line in file.readlines():
+		print(line)
 
 
 def main(inputfile):
 	print("Start of code:", tm.ctime(tm.time()))
 
+	file = open(inputfile, 'r')
+
 	filename = os.path.basename(inputfile)
 	if 'mes' in filename:
-		read_maxentscan_scores(inputfile)
+		read_maxentscan_scores(file)
 	elif 'nnsplice' in filename:
-		read_nnsplice_scores(inputfile)
+		read_nnsplice_scores(file)
 	elif 'assp' in filename:
-		read_assp_scores(inputfile)
+		read_assp_scores(file)
 
 	print("End of code:", tm.ctime(tm.time()))
 
