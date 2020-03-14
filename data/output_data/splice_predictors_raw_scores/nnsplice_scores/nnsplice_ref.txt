@@ -1,4 +1,3 @@
-Splice site predictions for 46 sequences with donor score cutoff 0.40, acceptor score cutoff 0.40 (exon/intron boundary shown in larger font):
 Donor site predictions for PLP1 :
 Start   End    Score     Exon   Intron
 

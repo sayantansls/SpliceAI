@@ -12,12 +12,14 @@ HEADERS = ['Gene_name',
 	       'genomic_HGVS',
 	       'sequence',
 	       'predictor',
+	       'splice_site_type',
 	       'score']
 
 ENTRY_T = {'Gene_name': '',
 	       'genomic_HGVS': '',
 	       'sequence': '',
 	       'predictor': '',
+	       'splice_site_type': '',
 	       'score': ''}
 """
 The MaxEntScan scores file is as follows:
@@ -30,10 +32,12 @@ TCgGTGAGC	MAXENT: 9.10
 > ALS2 g.202590081G>A
 cAGGTAACA	MAXENT: 8.88	
 """
-def read_maxentscan_scores(file):
+def read_maxentscan_scores(file, filename):
 	for line in file.readlines():
-		ENTRY = copy.deepcopy(ENTRY_T)
-		gene, gHGVS, seq, score = ['','','','']
+		if line.startswith(">"):
+			ENTRY = copy.deepcopy(ENTRY_T)
+			gene, gHGVS, seq, score = ['','','','']
+
 		if line.startswith(">"):
 			gene_gHGVS = line.replace("> ", "")
 			gene, gHGVS = gene_gHGVS.split()
@@ -47,11 +51,19 @@ def read_maxentscan_scores(file):
 		ENTRY['predictor'] = 'MaxEntScan'
 		ENTRY['score'] = score
 
+		if 'donor' in filename:
+			ENTRY['splice_site_type'] = 'donor'
+		elif 'acceptor' in filename:
+			ENTRY['splice_site_type'] = 'acceptor'
+		else:
+			print("Wrong file name")
+
 		field_values = [ENTRY[i] for i in HEADERS]
-		print(field_values)
+		if not '' in field_values:
+			print(field_values)
 
 """
-The NNsplice scores file is as follows:
+The NNSplice scores file is as follows:
 Acceptor site predictions for TPP1 :
 Start   End    Score     Intron               Exon
     1    41     0.94     ccctgacccctgaccctacaggctgcccccaggctgggtgt
@@ -70,8 +82,24 @@ Start   End    Score     Exon   Intron
 """
 def read_nnsplice_scores(file):
 	for line in file.readlines():
-		print(line)
+		ENTRY = copy.deepcopy(ENTRY_T)
+		site_type, gene, score, seq = ['','','','']
 
+		ENTRY['predictor'] = 'NNSplice'
+		line_elements = line.split()
+		if line_elements[0] == 'Donor' or line_elements[0] == 'Acceptor':
+			ENTRY['splice_site_type'] = line_elements[0]
+			ENTRY['Gene_name'] = line_elements[-2]
+		elif line_elements[0] == 'Start':
+			pass
+		elif int(line_elements[0]).isdigit():
+			ENTRY['sequence'] = line_elements[-1]
+			ENTRY['score'] = line_elements[-2]
+		elif line_elements == []:
+			pass
+
+		field_values = [ENTRY[i] for i in HEADERS]
+		print(field_values)
 
 """
 Sequence: G
@@ -99,7 +127,7 @@ def main(inputfile):
 
 	filename = os.path.basename(inputfile)
 	if 'mes' in filename:
-		read_maxentscan_scores(file)
+		read_maxentscan_scores(file, filename)
 	elif 'nnsplice' in filename:
 		read_nnsplice_scores(file)
 	elif 'assp' in filename:
