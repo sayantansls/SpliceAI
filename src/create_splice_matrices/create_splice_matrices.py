@@ -135,18 +135,16 @@ def create_gene_strand_map(genes_file):
     for gene in utils.records_iterator(genes_file):
         gene_strand_map[gene['Symbol']] = gene['Strand']
 
+def get_strand_sense(gene):
+  return gene_strand_map[gene]
 
 def create_mes_ranges(position, strand):
-    # Max Ent Scan
-    # Donor splice  site = -5 to +3
-    # Acceptor splice site = -19 to +3
-    # Build handling for negative strand?????
     if strand == '+':
-        donor_splice = {'start': (position - 3), 'end': (position + 5)}
-        acceptor_splice = {'start': (position - 19), 'end': (position + 3)}
+        donor_splice = {'start': (position - 2), 'end': (position + 6)}
+        acceptor_splice = {'start': (position - 20), 'end': (position + 2)}
     else:
-        donor_splice = {'start': (position - 5), 'end': (position + 3)}
-        acceptor_splice = {'start': (position - 3), 'end': (position + 19)}
+        donor_splice = {'start': (position - 6), 'end': (position + 2)}
+        acceptor_splice = {'start': (position - 2), 'end': (position + 20)}
 
     return donor_splice, acceptor_splice
 
@@ -307,7 +305,7 @@ def create_splice_matrix(inputfile, outfile):
         ENTRY['report_wise_gene_list_info'] = variant['ReportWiseGeneListInfo']
         ENTRY['chromosome'] = variant['Chromosome']
         ENTRY['gene'] = variant['Gene']
-        strand = gene_strand_map[variant['Gene']]
+        strand = get_strand_sense(variant['Gene'])
         ENTRY['strand'] = strand
         ENTRY['c./p.HGVS'] = variant['pHGVS']
         ENTRY['genomicHGVS'] = variant['Genomic HGVS']
