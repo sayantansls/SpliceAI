@@ -127,13 +127,11 @@ def get_ref_alt(position):
     except:
         pass
 
-
-gene_strand_map = dict()
-
-
 def create_gene_strand_map(genes_file):
-    for gene in utils.records_iterator(genes_file):
-        gene_strand_map[gene['Symbol']] = gene['Strand']
+  global gene_strand_map
+  gene_strand_map = dict()
+  for gene in utils.records_iterator(genes_file):
+    gene_strand_map[gene['Symbol']] = gene['Strand']
 
 def get_strand_sense(gene):
   return gene_strand_map[gene]
@@ -245,8 +243,12 @@ def get_original_sequence(predictor, chrom):
 
 
 def get_sequence(predictor, base, position, chrom):
-    sequence = genome[chrom][predictor['start'] - 1:position - 1] + base + genome[chrom][
-                                                                           position:predictor['end']]
+    sequence = genome[chrom][predictor['start'] - 1:position] + base + genome[chrom][
+                                                                           position+1:predictor['end']]
+    return sequence
+
+def get_reference_sequence(predictor, position, chrom):
+    sequence = genome[chrom][predictor['start'] -1:position] + genome[chrom][position] + genome[chrom][position+1:predictor['end']]
     return sequence
 
 

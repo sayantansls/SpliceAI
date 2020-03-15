@@ -51,7 +51,6 @@ def read_maxentscan_scores(file, filename):
 		ENTRY['predictor'] = 'MaxEntScan'
 		ENTRY['score'] = score
 
-<<<<<<< HEAD
 		if 'donor' in filename:
 			ENTRY['splice_site_type'] = 'donor'
 		elif 'acceptor' in filename:
@@ -59,10 +58,7 @@ def read_maxentscan_scores(file, filename):
 		else:
 			print("Wrong file name")
 
-		field_values = [ENTRY[i] for i in HEADERS]
-=======
 		field_values = [str(ENTRY[i]) for i in HEADERS]
->>>>>>> Added code to parse and read maxentscan scores
 		if not '' in field_values:
 			print(field_values)
 
@@ -86,7 +82,6 @@ Start   End    Score     Exon   Intron
 """
 def read_nnsplice_scores(file):
 	for line in file.readlines():
-<<<<<<< HEAD
 		ENTRY = copy.deepcopy(ENTRY_T)
 		site_type, gene, score, seq = ['','','','']
 
@@ -102,9 +97,6 @@ def read_nnsplice_scores(file):
 			ENTRY['score'] = line_elements[-2]
 		elif line_elements == []:
 			pass
-=======
-		pass
->>>>>>> Added code to parse and read maxentscan scores
 
 		field_values = [ENTRY[i] for i in HEADERS]
 		print(field_values)

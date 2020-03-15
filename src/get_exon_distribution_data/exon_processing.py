@@ -78,10 +78,8 @@ def create_gene_transcript_to_exons_map(transcripts_file):
         exon_start = line['Exon_start'].split(',')
         exon_end = line['Exon_end'].split(',')
 
-        if '' in exon_start:
-            exon_start.remove('')
-        if '' in exon_end:
-            exon_end.remove('')
+        exon_start = list(filter(None, exon_start))
+        exon_end = list(filter(None, exon_end))
 
         genes_exons[key] = {'exon_start': exon_start,
                             'exon_end': exon_end}
