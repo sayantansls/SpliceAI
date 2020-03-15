@@ -1,7 +1,7 @@
 """
 @author : sayantan
-This code will consume the splice_variants.tsv file and search for and get the cryptic splice sites
-near the variant on a search window range of +80 to -80 bases
+This code will consume the splice_variants.tsv file and search for and get the
+cryptic splice sites near the variant on a search window range of +80 to -80 bases
 """
 
 from __future__ import print_function
@@ -14,12 +14,12 @@ from pprint import pprint
 
 """
 The headers in the genes.tsv file are as follows:
-1 -- Strand_gene_id	
-2 -- ChrName	
-3 -- Strand	
-4 -- Gene_start	
-5 -- Gene_end	
-6 -- Symbol	
+1 -- Strand_gene_id
+2 -- ChrName
+3 -- Strand
+4 -- Gene_start
+5 -- Gene_end
+6 -- Symbol
 7 -- Entrez_id
 """
 def create_genes_strand_map(genesfile):
@@ -75,41 +75,41 @@ def populate_sequences(neighbourhood_sequence, strand):
 
 """
 The headers in the splice_variants.tsv file are as follows:
-1 -- Source	
-2 -- Case ID	
-3 -- UK1	
-4 -- UK2	
-5 -- Panel	
-6 -- Test	
-7 -- Time and Date	
-8 -- ClinicalManifestation	
-9 -- Gender	
-10 -- Ethnicity	
-11 -- Age	
+1 -- Source
+2 -- Case ID
+3 -- UK1
+4 -- UK2
+5 -- Panel
+6 -- Test
+7 -- Time and Date
+8 -- ClinicalManifestation
+9 -- Gender
+10 -- Ethnicity
+11 -- Age
 12 -- ReportWiseGeneListInfo
-13 -- UK3	
-14 -- UK4	
-15 -- UK5	
-16 -- Chromosome	
-17 -- Gene	
-18 -- pHGVS	
-19 -- Genomic HGVS	
-20 -- Transcript	
+13 -- UK3
+14 -- UK4
+15 -- UK5
+16 -- Chromosome
+17 -- Gene
+18 -- pHGVS
+19 -- Genomic HGVS
+20 -- Transcript
 21 -- VariantType
-22 -- AlleleFrequency	
-23 -- Global PPDB	
-24 -- Local PPDB	
-25 -- Zygosity	
-26 -- Clinvar IDs	
-27 -- Variant Label Reason	
-28 -- UK6	
-29 -- rsID	
-30 -- EVS	
-31 -- ExAc	
-32 -- dbSNP	
-33 -- 1000 Genomes	
-34 -- HGMD ID	
-35 -- Bioinfo Summary	
+22 -- AlleleFrequency
+23 -- Global PPDB
+24 -- Local PPDB
+25 -- Zygosity
+26 -- Clinvar IDs
+27 -- Variant Label Reason
+28 -- UK6
+29 -- rsID
+30 -- EVS
+31 -- ExAc
+32 -- dbSNP
+33 -- 1000 Genomes
+34 -- HGMD ID
+35 -- Bioinfo Summary
 36 -- Literature Summary
 """
 def process_entries(inputfile):
@@ -124,7 +124,7 @@ def process_entries(inputfile):
 		neighbourhood_sequence = create_splice_matrices.get_original_sequence(search_window, chrom)
 		ref_neighbourhood_sequence = create_splice_matrices.get_reference_sequence(search_window, position, chrom)
 		var_neighbourhhod_sequence = create_splice_matrices.get_reference_sequence(search_window, position, chrom)
-		
+
 		print(neighbourhood_sequence == ref_neighbourhood_sequence)
 		print(neighbourhood_sequence == var_neighbourhhod_sequence)
 		(donor_ref_list, acceptor_ref_list) = populate_sequences(neighbourhood_sequence, strand)
@@ -144,7 +144,7 @@ def main(inputfile, genesfile):
 
 	create_genes_strand_map(genesfile)
 	process_entries(inputfile)
-	
+
 	print("End of code:", tm.ctime(tm.time()))
 
 if __name__ == '__main__':
