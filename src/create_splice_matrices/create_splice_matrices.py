@@ -247,7 +247,7 @@ def get_sequence(predictor, base, position, chrom):
     return sequence
 
 def get_reference_sequence(predictor, position, chrom):
-    sequence = genome[chrom][predictor['start'] -1:position] + genome[chrom][position] + genome[chrom][position+1:predictor['end']]
+    sequence = genome[chrom][predictor['start'] -1:position-1] + genome[chrom][position-1] + genome[chrom][position:predictor['end']]
     return sequence
 
 

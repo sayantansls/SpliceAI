@@ -5,9 +5,10 @@ cryptic splice sites near the variant on a search window range of +80 to -80 bas
 """
 
 from __future__ import print_function
-import utils
+import deepdiff, json
 import time as tm
-import re, sys
+import re, sys, utils
+import twobitreader
 import create_splice_matrices
 from maxentpy import maxent
 from pprint import pprint
@@ -22,6 +23,9 @@ The headers in the genes.tsv file are as follows:
 6 -- Symbol
 7 -- Entrez_id
 """
+
+genome = twobitreader.TwoBitFile('/home/sayantan/Desktop/hg19.2bit')
+
 def create_genes_strand_map(genesfile):
 	global genes_strand_map
 	genes_strand_map = dict()
@@ -73,6 +77,39 @@ def populate_sequences(neighbourhood_sequence, strand):
 
 	return donor_seq_list, acceptor_seq_list
 
+def get_reference_sequence(window, position, chrom):
+    sequence = genome[chrom][window['start'] - 1:position - 1] + genome[chrom][position - 1] + genome[chrom][position:window['end']]
+    return sequence
+
+def get_variant_sequence(window, position, chrom, alt):
+	sequence = genome[chrom][window['start'] - 1:position - 1] + alt + genome[chrom][position:window['end']]
+	return sequence
+
+def annotate_scores(donor_list, acceptor_list):
+	donor_with_scores, acceptor_with_scores = [dict(), dict()]
+	for donor in donor_list:
+		donor_with_scores[donor] = maxent.score5(donor)
+	for acceptor in acceptor_list:
+		acceptor_with_scores[acceptor] = maxent.score3(acceptor)
+	return donor_with_scores, acceptor_with_scores
+
+def dict_differ(ref_dict, var_dict):
+	ref_keys, var_keys = [ref_dict.keys(), var_dict.keys()]
+	matched_keys = set(ref_keys).intersection(set(var_keys))
+	unmatched_keys = set(ref_keys).symmetric_difference(set(var_keys))
+
+	for key in matched_keys:
+		if ref_dict[key] != var_dict[key]:
+			unmatched_keys.add(key)
+	diff_dict = dict()
+	for key in unmatched_keys:
+		if key in ref_dict and key not in var_dict:
+			diff_dict[key] = ref_dict[key]
+		elif key in var_dict and key not in ref_dict:
+			diff_dict[key] = var_dict[key]
+		elif key in ref_dict and key in var_dict:
+			diff_dict[key] = {'reference' : ref_dict[key], 'variant': var_dict[key]}
+	return diff_dict
 """
 The headers in the splice_variants.tsv file are as follows:
 1 -- Source
@@ -119,24 +156,28 @@ def process_entries(inputfile):
 		chrom = entry['Chromosome']
 		strand = genes_strand_map[entry['Gene']]
 		(ref, alt) = create_splice_matrices.get_ref_alt(entry['Genomic HGVS'])
+		ref_neighbourhood_sequence = get_reference_sequence(search_window, position, chrom)
+		var_neighbourhhod_sequence = get_variant_sequence(search_window, position, chrom, alt)
+
+		(donor_ref_list, acceptor_ref_list) = populate_sequences(ref_neighbourhood_sequence, strand)
+		(donor_var_list, acceptor_var_list) = populate_sequences(var_neighbourhhod_sequence, strand)
+
+		(donor_ref_sites_with_scores, acceptor_ref_sites_with_scores) = annotate_scores(donor_ref_list, acceptor_ref_list)
+		(donor_var_sites_with_scores, acceptor_var_sites_with_scores) = annotate_scores(donor_var_list, acceptor_var_list)
+
+		donor_diff = dict_differ(donor_ref_sites_with_scores, donor_var_sites_with_scores)
+		acceptor_diff = dict_differ(acceptor_ref_sites_with_scores, acceptor_var_sites_with_scores)
+
 		print(entry['Genomic HGVS'])
-		neighbourhood_sequence = create_splice_matrices.get_original_sequence(search_window, chrom)
-		ref_neighbourhood_sequence = create_splice_matrices.get_reference_sequence(search_window, position, chrom)
-		var_neighbourhhod_sequence = create_splice_matrices.get_reference_sequence(search_window, position, chrom)
-
-		print(neighbourhood_sequence == ref_neighbourhood_sequence)
-		print(neighbourhood_sequence == var_neighbourhhod_sequence)
-		(donor_ref_list, acceptor_ref_list) = populate_sequences(neighbourhood_sequence, strand)
-
-		donor_sites_with_scores, acceptor_sites_with_scores = [dict(), dict()]
-		for donor in donor_ref_list:
-			donor_sites_with_scores[donor] = maxent.score5(donor)
-		for acceptor in acceptor_ref_list:
-			acceptor_sites_with_scores[acceptor] = maxent.score3(acceptor)
-
-		pprint(donor_sites_with_scores)
-		pprint(acceptor_sites_with_scores)
-
+		#pprint(donor_ref_sites_with_scores)
+		#pprint(acceptor_ref_sites_with_scores)
+		#print('\n')
+		#pprint(donor_var_sites_with_scores)
+		#pprint(acceptor_var_sites_with_scores)
+		print("Donor diff")
+		pprint(donor_diff)
+		print("Acceptor diff")
+		pprint(acceptor_diff)
 
 def main(inputfile, genesfile):
 	print("Start of code:", tm.ctime(tm.time()))
