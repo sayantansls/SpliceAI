@@ -17,7 +17,6 @@ HEADERS = ['#CHROM',
 		   'FILTER',
 		   'INFO',
 		   'FORMAT',
-		   'STRAN-000005731-PRC-0003945_S4_NextSeq01-Run0070',
 		   'GENES']
 
 ENTRY_T = {'#CHROM': '',
@@ -29,7 +28,6 @@ ENTRY_T = {'#CHROM': '',
 		   'FILTER': '',
 		   'INFO': '',
 		   'FORMAT': '',
-		   'STRAN-000005731-PRC-0003945_S4_NextSeq01-Run0070': '',
 		   'GENES': ''}
 
 sep = '\t'
@@ -96,12 +94,13 @@ def annotate_entries(vcffile, output):
 		ENTRY['FILTER'] = entry['FILTER']
 		ENTRY['INFO'] = entry['INFO']
 		ENTRY['FORMAT'] = entry['FORMAT']
-		ENTRY['STRAN-000005731-PRC-0003945_S4_NextSeq01-Run0070'] = entry['STRAN-000005731-PRC-0003945_S4_NextSeq01-Run0070']
-		ENTRY['GENES'] = genes
+		
+		for gene in genes:
+			ENTRY['GENES'] = gene
 
-		field_values = [str(ENTRY[i]) for i in HEADERS]
-		output.write(sep.join(field_values))
-		output.write('\n')
+			field_values = [str(ENTRY[i]) for i in HEADERS]
+			output.write(sep.join(field_values))
+			output.write('\n')
 	return count
 
 def main(vcffile, genesfile):
