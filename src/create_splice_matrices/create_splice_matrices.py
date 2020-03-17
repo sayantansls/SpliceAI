@@ -182,7 +182,6 @@ def create_nnsplice_ranges(position):
     # NN Splice
     # Donor splice  site = -7 to +8
     # Acceptor splice site = -20 to +20
-    # Build handling for negative strand?????
     donor_splice = {'start': (position - 7), 'end': (position + 8)}
     acceptor_splice = {'start': (position - 20), 'end': (position + 20)}
     return donor_splice, acceptor_splice

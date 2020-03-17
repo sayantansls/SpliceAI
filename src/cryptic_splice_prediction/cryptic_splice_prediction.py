@@ -120,7 +120,6 @@ def process_entries(inputfile):
 		strand = genes_strand_map[entry['Gene']]
 		(ref, alt) = create_splice_matrices.get_ref_alt(entry['Genomic HGVS'])
 		print(entry['Genomic HGVS'])
-		print(ref,alt)
 		neighbourhood_sequence = create_splice_matrices.get_original_sequence(search_window, chrom)
 		ref_neighbourhood_sequence = create_splice_matrices.get_reference_sequence(search_window, position, chrom)
 		var_neighbourhhod_sequence = create_splice_matrices.get_reference_sequence(search_window, position, chrom)
