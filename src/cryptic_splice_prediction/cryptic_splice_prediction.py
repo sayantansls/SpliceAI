@@ -26,6 +26,16 @@ The headers in the genes.tsv file are as follows:
 
 genome = twobitreader.TwoBitFile('/home/sayantan/Desktop/hg19.2bit')
 
+class SpliceSite(object):
+	"""SpliceSite defines a site to be investigated for splicing,
+	it has start and end coordinates and the sequence"""
+
+	def __init__(self, start, end, sequence):
+		sups SpliceSite, self).__init__()
+		self.start = start
+		self.end = end
+		self.sequence = sequence
+
 def create_genes_strand_map(genesfile):
 	global genes_strand_map
 	genes_strand_map = dict()
@@ -110,6 +120,7 @@ def dict_differ(ref_dict, var_dict):
 		elif key in ref_dict and key in var_dict:
 			diff_dict[key] = {'reference' : ref_dict[key], 'variant': var_dict[key]}
 	return diff_dict
+
 """
 The headers in the splice_variants.tsv file are as follows:
 1 -- Source

@@ -17,6 +17,7 @@ HEADERS = ['#CHROM',
 		   'FILTER',
 		   'INFO',
 		   'FORMAT',
+		   'DETAILS',
 		   'GENES']
 
 ENTRY_T = {'#CHROM': '',
@@ -28,6 +29,7 @@ ENTRY_T = {'#CHROM': '',
 		   'FILTER': '',
 		   'INFO': '',
 		   'FORMAT': '',
+		   'DETAILS': '',
 		   'GENES': ''}
 
 sep = '\t'
@@ -45,8 +47,8 @@ def create_gene_position_map(genesfile):
 	global gene_positions_map
 	gene_positions_map = dict()
 	for gene in utils.records_iterator(genesfile):
-		gene_positions_map[gene['Symbol']] = {'chromosome': gene['ChrName'], 
-				                              'start': int(gene['Gene_start']), 
+		gene_positions_map[gene['Symbol']] = {'chromosome': gene['ChrName'],
+				                              'start': int(gene['Gene_start']),
 				                              'end': int(gene['Gene_end'])}
 
 def read_vcf(vcffile):
@@ -65,23 +67,22 @@ def find_gene(position, chromosome):
 	return genes
 """
 The headers in the vcf file are as follows:
-1 -- #CHROM	
-2 -- POS	
-3 -- ID	
-4 -- REF	
-5 -- ALT	
-6 -- QUAL	
-7 -- FILTER	
-8 -- INFO	
-9 -- FORMAT	
-10 -- STRAN-000005731-PRC-0003945_S4_NextSeq01-Run0070
+1 -- #CHROM
+2 -- POS
+3 -- ID
+4 -- REF
+5 -- ALT
+6 -- QUAL
+7 -- FILTER
+8 -- INFO
+9 -- FORMAT
+10 -- DETAILS
 """
 def annotate_entries(vcffile, output):
 	data = csv.DictReader(read_vcf(vcffile), delimiter='\t')
 	count = 0
 	for entry in data:
 		count = count + 1
-		print("Working on variant number:", count)
 		ENTRY = copy.deepcopy(ENTRY_T)
 		position, chromosome = [int(entry['POS']), entry['#CHROM']]
 		genes = find_gene(position, chromosome)
@@ -94,7 +95,8 @@ def annotate_entries(vcffile, output):
 		ENTRY['FILTER'] = entry['FILTER']
 		ENTRY['INFO'] = entry['INFO']
 		ENTRY['FORMAT'] = entry['FORMAT']
-		
+		ENTRY['DETAILS'] = entry['DETAILS']
+
 		for gene in genes:
 			ENTRY['GENES'] = gene
 
@@ -103,22 +105,28 @@ def annotate_entries(vcffile, output):
 			output.write('\n')
 	return count
 
-def main(vcffile, genesfile):
-	start_time = tm.ctime(tm.time())
-
-	filename = os.path.basename(vcffile)
-	output_file = filename.replace('.vcf', '_output.vcf')
-	output = open(output_file, 'w')
-	output.write(sep.join(HEADERS))
-	output.write('\n')
+def main(vcf_folder_path, genesfile):
 
 	create_gene_position_map(genesfile)
-	count = annotate_entries(vcffile, output)
 
-	end_time = tm.ctime(tm.time())
-	print("NUMBER OF VARIANTS PROCESSED:", count)
-	print("Start time:", start_time)
-	print("End time:", end_time)
+	all_files = os.listdir(vcf_folder_path)
+	file_count = 0
+	for file in all_files:
+		start_time = tm.ctime(tm.time())
+		print("FILE NAME:", file)
+		file_count = file_count + 1
+		filename = os.path.basename(file)
+		output_file = filename.replace('.vcf', '_output.vcf')
+		output = open(vcf_folder_path+output_file, 'w')
+		output.write(sep.join(HEADERS))
+		output.write('\n')
+
+		variants_count = annotate_entries(vcf_folder_path+file, output)
+
+		end_time = tm.ctime(tm.time())
+		print("NUMBER OF VARIANTS PROCESSED:", variants_count)
+		print("Start time:", start_time)
+		print("End time:", end_time)
 
 if __name__ == '__main__':
 	main(sys.argv[1], sys.argv[2])
