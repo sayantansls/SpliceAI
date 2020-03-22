@@ -35,7 +35,7 @@ ENTRY_T = {'#CHROM': '',
            'ALT': '',
            'QUAL': '.',
            'FILTER': '.',
-           'INFO': ''}
+           'INFO': '.'}
 
 sep = '\t'
 """
@@ -57,7 +57,6 @@ def process_entries(vcf_file, output):
         ENTRY['POS'] = variant['POS']
         ENTRY['REF'] = variant['REF']
         ENTRY['ALT'] = variant['ALT']
-        ENTRY['INFO'] = variant['INFO']
 
         field_values = [str(ENTRY[i]) for i in HEADERS]
         output.write(sep.join(field_values))
