@@ -6,9 +6,7 @@ according to the format specified by Illumina/SpliceAI
 
 import time as tm
 import twobitreader
-import re
-import copy
-import sys
+import re, copy, 	sys
 import utils
 import vcf_generator_ver2
 
