@@ -30,11 +30,13 @@ class SpliceSite(object):
 	"""SpliceSite defines a site to be investigated for splicing,
 	it has start and end coordinates and the sequence"""
 
-	def __init__(self, start, end, sequence):
-		sups SpliceSite, self).__init__()
-		self.start = start
-		self.end = end
-		self.sequence = sequence
+	def __init__(self, position, chrom, donor_ref, donor_var, acceptor_ref, acceptor_var):
+		self.position = position
+		self.chrom = chrom
+		self.donor_ref = donor_ref
+		self.donor_var = donor_var
+		self.acceptor_ref = acceptor_ref
+		self.acceptor_var = acceptor_var
 
 def create_genes_strand_map(genesfile):
 	global genes_strand_map
@@ -102,7 +104,7 @@ def annotate_scores(donor_list, acceptor_list):
 	for acceptor in acceptor_list:
 		acceptor_with_scores[acceptor] = maxent.score3(acceptor)
 	return donor_with_scores, acceptor_with_scores
-
+ 
 def dict_differ(ref_dict, var_dict):
 	ref_keys, var_keys = [ref_dict.keys(), var_dict.keys()]
 	matched_keys = set(ref_keys).intersection(set(var_keys))
@@ -161,6 +163,7 @@ The headers in the splice_variants.tsv file are as follows:
 36 -- Literature Summary
 """
 def process_entries(inputfile):
+	splice_site_objects = list()
 	for entry in utils.records_iterator(inputfile):
 		position = int(''.join(re.findall(r'[0-9]+', entry['Genomic HGVS'])))
 		search_window = get_neighbourhood_region(position)
@@ -176,8 +179,14 @@ def process_entries(inputfile):
 		(donor_ref_sites_with_scores, acceptor_ref_sites_with_scores) = annotate_scores(donor_ref_list, acceptor_ref_list)
 		(donor_var_sites_with_scores, acceptor_var_sites_with_scores) = annotate_scores(donor_var_list, acceptor_var_list)
 
+
+		splice_site_object = SpliceSite(position, chrom, donor_ref_sites_with_scores, \
+		donor_var_sites_with_scores, acceptor_ref_sites_with_scores, acceptor_var_sites_with_scores)
+
 		donor_diff = dict_differ(donor_ref_sites_with_scores, donor_var_sites_with_scores)
 		acceptor_diff = dict_differ(acceptor_ref_sites_with_scores, acceptor_var_sites_with_scores)
+
+		splice_site_objects.append(splice_site_object)
 
 		print(entry['Genomic HGVS'])
 		#pprint(donor_ref_sites_with_scores)
