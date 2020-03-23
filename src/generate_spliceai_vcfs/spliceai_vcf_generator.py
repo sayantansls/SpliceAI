@@ -1,10 +1,10 @@
 """
 @author -- sayantan
-This code consumes a file containing gene name and genomic HGVS and converts it into a VCF file 
+This code consumes a file containing gene name and genomic HGVS and converts it into a VCF file
 according to the format specified by Illumina/SpliceAI
 """
 
-import time as tm 
+import time as tm
 import twobitreader
 import re
 import copy
@@ -73,14 +73,14 @@ def create_non_substitution_entries(output, others):
 		ENTRY['POS'] = pos
 		ENTRY['REF'] = ref
 		ENTRY['ALT'] = alt
-		
+
 		field_values = [str(ENTRY[i]) for i in headers]
 		output.write(sep.join(field_values))
 		output.write('\n')
 
 def main(input_file, output_file, genome_file, input_template, genesfile):
 	print("Start of code:", tm.ctime(tm.time()))
-	
+
 	vcf_generator_ver2.load_human_genome_sequence(genome_file)
 	metadata = vcf_generator_ver2.load_metadata(input_template)
 
@@ -95,9 +95,9 @@ def main(input_file, output_file, genome_file, input_template, genesfile):
 	variants_list = vcf_generator_ver2.process_input_file(input_file)
 
 	print("Total variants in the file:", len(variants_list))
-	
+
 	(subs, others) = vcf_generator_ver2.segregate_variants()
-	
+
 	print("#Substitution variants:", len(subs))
 	print("#INDEL variants:", len(others))
 
