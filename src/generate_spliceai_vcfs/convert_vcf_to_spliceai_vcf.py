@@ -5,6 +5,7 @@ This code converts StrandOmics VCF to Splice AI input VCF format
 import utils
 import sys, os, copy
 import time as tm
+import vcf_generator_ver2
 
 """
 The headers in StrandOmics VCF format are as follows:
@@ -62,13 +63,16 @@ def process_entries(vcf_file, output):
         output.write(sep.join(field_values))
         output.write('\n')
 
-def main(vcf_folder):
+def main(vcf_folder, input_template):
     print("Start of code:", tm.ctime(tm.time()))
     files = os.listdir(vcf_folder)
+    metadata = vcf_generator_ver2.load_metadata(input_template)
     for file in files:
         filename = os.path.basename(file)
         output_file_name = filename.replace('.vcf','_spliceai.vcf')
         output = open(vcf_folder+output_file_name, 'w')
+        for line in metadata:
+            output.write(line)
         output.write(sep.join(HEADERS))
         output.write('\n')
         print("INPUT FILE:", filename)
@@ -78,4 +82,4 @@ def main(vcf_folder):
     print("End of code:", tm.ctime(tm.time()))
 
 if __name__ == '__main__':
-    main(sys.argv[1])
+    main(sys.argv[1], sys.argv[2])
