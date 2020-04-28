@@ -90,7 +90,7 @@ def main(inputfile, genesfile):
 	inputfile_name = os.path.basename(inputfile)
 	inputfile_path = "/home/sayantan/Desktop/SpliceAI/data/strandomics_input_data"
 
-	outputfile_name = inputfile_name.replace('.tsv','') + "_annotated.tsv"
+	outputfile_name = inputfile_name.replace('.tsv','_annotated.tsv')
 
 	output = open(os.path.join(inputfile_path,outputfile_name), 'w')
 	output.write(sep.join(HEADERS))

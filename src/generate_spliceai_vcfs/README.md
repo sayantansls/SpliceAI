@@ -23,7 +23,6 @@
 	OUT=../../data/processed_files/
 	PYTHONPATH=../common python spliceai_vcf_generator.py \
 	$DATA/variant_input_data/splice_variants_for_vcf.tsv \
-	$OUT/splice_variants_vcf.vcf \
 	~/Desktop/hg19.2bit \
 	$DATA/spliceai_templates/input_template.vcf \
 	$DATA/strandomics_input_data/genes.tsv
